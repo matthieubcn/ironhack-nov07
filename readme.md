@@ -25,7 +25,7 @@
 - [License](#license)
 - [Links](#links)
 
-## Comandos de Github
+## Comandos de Git
 
 Sigue estos pasos para hacer cambios en tu repositorio:
 
@@ -54,3 +54,11 @@ Empujar los cambios recientes a tu repositorio en la web.
 ```bash
 git push origin "nombre del branch/rama que estaremos apuntando"
 ```
+
+Ver los branches asociados al projecto
+
+```bash
+git branch
+```
+
+test
