@@ -35,7 +35,7 @@ Sigue estos pasos para hacer cambios en tu repositorio:
 
 Para subir tus cambios al stream de git tienes que `añadir` tus cambios recientes mediante el siguiente comando:
 
-Añadir todos tus cambios:
+`Añadir` todos tus cambios:
 
 ```bash
 git add .
