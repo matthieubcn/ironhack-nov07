@@ -5,7 +5,7 @@
   <p align="center">
   Este repositorio sirve como una guia para la clase de FE Dev - Vue Conforcat. Done estaremos apendiendo acerca de HTML, CSS3, Javascript, Vue & Supabase.
 </p>
- <p align="center">
+ <p align="center" style="font: 16px">
  Creado con ❤️ por Diego Zito, Carlos Garrido & Aleix Abuli.
 </p>
 </h1>
