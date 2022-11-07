@@ -24,3 +24,21 @@
 - [Css Basics](#some-link-here)
 - [License](#license)
 - [Links](#links)
+
+## Comandos de Github
+
+Sigue estos pasos para hacer cambios en tu repositorio:
+
+Para subir tus cambios al stream de git tienes que `añadir` tus cambios recientes mediante el siguiente comando:
+
+Añadir todos tus cambios:
+
+```bash
+git add .
+```
+
+Añadir cambio individual por nombre de archivo:
+
+```bash
+git add "nombre de archivo ej: 01-bsaic-layout.html"
+```
