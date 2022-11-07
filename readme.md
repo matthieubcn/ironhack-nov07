@@ -22,8 +22,11 @@
   - [Semantic & Non Semantic Elements - Layout](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/07-layout.html)
   - [Layout Example - Basic Website Structure](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/08-layout-example.html)
 - [Css Basics](#some-link-here)
-- [License](#license)
-- [Links](#links)
+- [CheatSheets / Chuletas](#)
+  - [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+  - [Html Cheatsheet](https://devhints.io/html)
+  - [Css Cheatsheet](https://devhints.io/css)
+  <!-- - [Links](#links) -->
 
 ## Comandos de Git
 
@@ -37,13 +40,13 @@ Añadir todos tus cambios:
 git add .
 ```
 
-Añadir cambio individual por nombre de archivo:
+`Añadir` cambio individual por nombre de archivo:
 
 ```bash
 git add "nombre de archivo ej: 01-bsaic-layout.html"
 ```
 
-Añadirle un `comentario` al `commit` que estaremos empujando a tu repositorio en la web.
+`Añadirle` un `comentario` al `commit` que estaremos empujando a tu repositorio en la web.
 
 ```bash
 git commit -m "Texto descriptivo de los cambios recientes"
