@@ -49,10 +49,16 @@ Añadirle un `comentario` al `commit` que estaremos empujando a tu repositorio e
 git commit -m "Texto descriptivo de los cambios recientes"
 ```
 
-Empujar los cambios recientes a tu repositorio en la web.
+Empujar los cambios recientes a tu repositorio en la web. Extended.
 
 ```bash
 git push origin "nombre del branch/rama que estaremos apuntando"
+```
+
+Empujar los cambios recientes a tu repositorio en la web. Simplified.
+
+```bash
+git push
 ```
 
 Ver los branches asociados al projecto
@@ -60,5 +66,3 @@ Ver los branches asociados al projecto
 ```bash
 git branch
 ```
-
-test
