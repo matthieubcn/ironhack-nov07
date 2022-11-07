@@ -19,7 +19,7 @@
   - [Anchor Tags / Links](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/04-links.html)
   - [Images](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/05-images.html)
   - [Ordered & Unordered Lists](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/06-list.html)
-  - [Semantic & Non Semantic Elements](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/07-layout.html)
+  - [Semantic & Non Semantic Elements - Layout](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/07-layout.html)
   - [Layout Example - Basic Website Structure](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/08-layout-example.html)
 - [Css Basics](#some-link-here)
 - [License](#license)
