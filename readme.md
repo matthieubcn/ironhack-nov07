@@ -42,3 +42,9 @@ Añadir cambio individual por nombre de archivo:
 ```bash
 git add "nombre de archivo ej: 01-bsaic-layout.html"
 ```
+
+Añadirle un `comentario` al `commit` que estaremos empujando a nuestro repositorio en la web.
+
+```bash
+git commit -m "Texto descriptivo de los cambios recientes"
+```
