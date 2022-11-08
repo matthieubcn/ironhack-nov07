@@ -21,6 +21,7 @@
   - [Ordered & Unordered Lists](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/06-list.html)
   - [Semantic & Non Semantic Elements - Layout](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/07-layout.html)
   - [Layout Example - Basic Website Structure](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/08-layout-example.html)
+  - -[Html Tables](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/09-tables.html)
 - [Css Basics](#some-link-here)
 - [CheatSheets / Chuletas](#)
   - [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
