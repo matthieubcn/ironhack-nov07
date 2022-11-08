@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* CSS ROOT SELECTOR */
+      /* CSS ROOT SELECTOR */
+      /* La pseudoclase CSS :root coincide con el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento <html> y es idéntico al selector html, salvo que su especificidad es mayor. */
+      /* :root puede ser útil para declarar variables CSS globales */
+
+      /* DECOMMENT AFTER CLASS */
+
+      /* :root {
+        --blue: blue;
+      } */
+
+      /* CSS UNIVERSAL SELECTOR
+      El selector universal, también conocido como comodín, selecciona todo, todos los elementos del documento.
+      You can use the universal selector to reset the browser's default padding and margin to zero at the top of the file before you add any other styles */
+
+      /* Puede utilizar el selector universal para restablecer el relleno y el margen por defecto del navegador a cero en la parte superior del archivo antes de añadir cualquier otro estilo: */
+      * {
+        background-color: blue;
+        /* padding: 0;
+        margin: 0; */
+      }
+
+      /* CSS Type Selector */
+      /* El selector de tipo CSS selecciona todos los elementos HTML del tipo especificado. */
+      /* Para utilizarlo, mencione el nombre del elemento HTML. */
+      /* Por ejemplo, si quieres aplicar un estilo a cada uno de los H1 del documento HTML, debes especificar el elemento h1: */
+      h1 {
+        color: white;
+        text-decoration: underline;
+      }
+
+      /* CSS ID Selector */
+      /* El selector ID selecciona un elemento HTML basado en el valor de su atributo ID. */
+      /* Tenga en cuenta que el ID de un elemento debe ser único en un documento, lo que significa que sólo debe haber un elemento HTML con ese valor de ID dado. No puedes usar el mismo valor de ID en un elemento diferente a ese. */
+      /* Vale la pena mencionar que es mejor tratar de limitar el uso de este selector y optar por utilizar el selector de clase en su lugar. Aplicar estilos utilizando el selector ID no es lo ideal porque los estilos no son reutilizables. */
+      #welcome {
+        background-color: blue;
+      }
+
+      #about {
+        color: white;
+      }
+
+      /* CSS CLASS SELECTOR */
+      /* El selector de clase coincide y selecciona los elementos HTML en función del valor de su clase. En concreto, selecciona todos los elementos del documento con ese nombre de clase específico. */
+      /* Con el selector de clase, puedes seleccionar varios elementos a la vez y aplicarles el mismo estilo sin tener que copiar y pegar los mismos estilos para cada uno por separado. */
+      /* Las clases son reutilizables, lo que las convierte en una buena opción para practicar el desarrollo DRY. DRY es un principio de programación y es la abreviatura de "Don't Repeat Yourself" (no te repitas). Como su nombre indica, el objetivo es evitar escribir código repetitivo siempre que sea posible. */
+      .primary-heading {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="explanation">
+      <div class="block-01">
+        <h1>CSS Selectors</h1>
+        <p>
+          Los selectores CSS se dirigen y seleccionan los elementos HTML a los
+          que se quiere dar estilo.
+        </p>
+        <p>
+          En concreto, los selectores CSS permiten seleccionar varios elementos
+          a la vez.
+        </p>
+        <p>
+          Son útiles cuando quieres aplicar los mismos estilos a más de un
+          elemento HTML, porque no te repetirás escribiendo las mismas líneas de
+          código para diferentes elementos.
+        </p>
+        <p>
+          Los selectores de CSS también son útiles cuando quieres hacer un
+          cambio: sólo tienes que hacer el cambio en un lugar, lo que te ahorra
+          mucho tiempo.
+        </p>
+      </div>
+      <div class="block-02">
+        <h2>Simple CSS Selectors</h2>
+        <p>
+          Los selectores le permiten seleccionar partes específicas de su
+          documento con fines de estilización.
+        </p>
+        <p>
+          Los selectores simples seleccionan directamente uno o varios
+          elementos:
+        </p>
+        <ul>
+          <li>Utilizando el selector universal, *.</li>
+          <li>Basado en el nombre/tipo del elemento.</li>
+          <li>Basado en el valor de la clase del elemento.</li>
+          <li>Basado en el valor del ID del elemento.</li>
+        </ul>
+        <p>
+          By learning how the most simple selectors work, you can understand how
+          to use the more complex ones.
+        </p>
+        <p>
+          The simple selectors will most often be the ones you will use the most
+          and the ones you will be the most familiar with if you have some
+          experience writing CSS code.
+        </p>
+      </div>
+    </section>
+
+    <section id="examples">
+      <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <h1>uexample</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+          ipsum quis, iste, libero sit enim tempora blanditiis doloribus error
+          excepturi non suscipit maiores nihil laboriosam! Maxime est alias
+          porro assumenda.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
