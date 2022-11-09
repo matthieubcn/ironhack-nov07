@@ -14,10 +14,6 @@
 
 [Zoom Link](https://ironhack.zoom.us/j/93120423452)
 
-## Links de Ayuda
-
--[CSS Links]() -[Html Links]() -[JS Links]() -[Vue Links]()
-
 ## Estructura de Carpetas
 
 - [Html Basics](https://github.com/dzc1/ironhack-nov07/tree/main/section-01-html)
@@ -48,6 +44,10 @@
 - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Html Cheatsheet](https://devhints.io/html)
 - [Css Cheatsheet](https://devhints.io/css)
+
+## Links de Ayuda
+
+-[CSS Links]() -[Html Links]() -[JS Links]() -[Vue Links]()
 
 ## Comandos de Git
 
