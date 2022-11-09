@@ -10,10 +10,18 @@
  Creado con ❤️ por Diego Zito, Carlos Garrido & Aleix Abuli.
 </p>
 
+## Link a Zoom
+
+[Zoom Link](https://ironhack.zoom.us/j/93120423452)
+
+## Links de Ayuda
+
+-[CSS Links]() -[Html Links]() -[JS Links]() -[Vue Links]()
+
 ## Estructura de Carpetas
 
 - [Html Basics](https://github.com/dzc1/ironhack-nov07/tree/main/section-01-html)
-  - [Basic Layout](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/01-basic-layout.html)
+  - [Basic Layout](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/01-basic-layout.¡html)
   - [Meta Tags](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/02-meta-tags.html)
   - [Typography, Headings, Paragraphs](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/03-typography.html)
   - [Anchor Tags / Links](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/04-links.html)
