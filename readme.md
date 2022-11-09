@@ -30,13 +30,24 @@
   - [Semantic & Non Semantic Elements - Layout](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/07-layout.html)
   - [Layout Example - Basic Website Structure](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/08-layout-example.html)
   - [Html Tables](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/09-tables.html)
-- [Css Basics](#some-link-here)
-- [CheatSheets / Chuletas](#)
-  - [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
-  - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-  - [Html Cheatsheet](https://devhints.io/html)
-  - [Css Cheatsheet](https://devhints.io/css)
-  <!-- - [Links](#links) -->
+  - [HTML Forms](https://github.com/dzc1/ironhack-nov07/blob/main/section-01-html/14-forms.html)
+- [Css Basics](https://github.com/dzc1/ironhack-nov07/tree/main/section-02-css)
+  - [CSS Basics](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/01-basics.html)
+  - [CSS Selectors](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/02-selectors.html)
+  - [Fonts](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/03-fonts.html)
+  - [Text Properties](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/04-text-properties.html)
+  - [Colors](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/05-colors.html)
+  - [Borders & Backgrounds](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/06-borders-background.html)
+  - [Box Model](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/07-box-model.html)
+  - [Layout - Floats](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/08-float-algin.html)
+  - [Links & Buttons](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/09-links-buttons.html)
+
+## Chuletas
+
+- [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+- [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Html Cheatsheet](https://devhints.io/html)
+- [Css Cheatsheet](https://devhints.io/css)
 
 ## Comandos de Git
 
