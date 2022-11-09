@@ -56,6 +56,44 @@
       .primary-heading {
         color: green;
       }
+
+      /* LESSON 2 - WEDNESDAY 09 11 2022 */
+
+      /* GROUPING CSS SELECTORS */
+      /* Con el selector de agrupación, puede seleccionar y aplicar estilo a más de un elemento a la vez. */
+      /* Para utilizar el selector de agrupación, utilice una coma, , para agrupar y separar los diferentes elementos que desee seleccionar. */
+      #welcome,
+      #about {
+        border: 1px solid black;
+        padding: 10px;
+        margin-bottom: 25px;
+      }
+
+      /* Combinador descendiente */
+      /* Como su nombre indica, el combinador de descendientes selecciona sólo los descendientes del elemento especificado. */
+      /* Esencialmente, primero se menciona el elemento padre, se deja un espacio, y luego se menciona el descendiente del primer elemento, que es el elemento hijo del padre. El elemento hijo es un elemento dentro del elemento padre. */
+      #welcome p {
+        font-size: 8px;
+      }
+
+      /* Combinador de hijos directos */
+      /* El combinador hijo directo, también conocido como descendiente directo, selecciona sólo los hijos directos del elemento padre. */
+      /* Para utilizar el combinador de hijo directo, especifique el elemento padre y, a continuación, añada el carácter > seguido de los hijos directos del elemento padre que desee seleccionar. */
+      #descending-combinator > p {
+        color: red;
+      }
+
+      #descending-combinator > div > p {
+        color: orange;
+      }
+
+      /* Combinador General de hermanos */
+      /* El combinador general de hermanos selecciona a los hermanos. */
+      /* Puede especificar el primer elemento y un segundo que viene después del primero. */
+      /* Para utilizar el combinador general de hermanos, especifique el primer elemento y, a continuación, utilice el carácter ~ seguido del segundo elemento que debe ir después del primero. */
+      .sibling ~ p {
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -119,6 +157,33 @@
           excepturi non suscipit maiores nihil laboriosam! Maxime est alias
           porro assumenda.
         </p>
+      </div>
+      <hr />
+      <div id="about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+          nesciunt at nam consequatur sit corporis vitae ea eligendi eveniet, id
+          sunt. Recusandae, necessitatibus? Enim magnam dignissimos corrupti
+          maxime autem officia.
+        </p>
+      </div>
+      <hr />
+      <div id="descending-combinator">
+        <p>Example 001</p>
+        <div>
+          <p>Example 002</p>
+        </div>
+      </div>
+      <hr />
+
+      <div id="sibling-combinator">
+        <div class="sibling">
+          <p>I am a paragpah inside a div</p>
+        </div>
+        <p>I am a paragpah inside a div</p>
+        <h3>I am a heading 003</h3>
+        <p>I am a paragpah inside a div</p>
       </div>
     </section>
   </body>
