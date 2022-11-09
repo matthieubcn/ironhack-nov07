@@ -94,6 +94,91 @@
       .sibling ~ p {
         color: red;
       }
+
+      /* Combinador de hermanos adyacentes */
+      /* El combinador de hermanos adyacentes es más específico que el combinador de hermanos general. */
+      /* Este selector sólo coincide con los hermanos inmediatos. Los hermanos inmediatos son los que vienen justo después del primer elemento. */
+      /* Para utilizar el combinador de hermanos adyacentes, especifique el primer elemento y, a continuación, añada el carácter + seguido del elemento que desee seleccionar y que esté inmediatamente después del primer elemento. */
+      .adjacent + p {
+        color: purple;
+      }
+
+      /* PSEUDO CLASESS EXPANDED  */
+
+      /* EXAMPLE WITH SIMPLE Heading Element */
+      .diego {
+        color: red;
+      }
+
+      .diego:hover {
+        color: black;
+      }
+
+      /* Pseudo Selectors for ANCHOR TAGS or BUTTONS OR ANY CLICKABLE CONTENT */
+
+      a {
+        display: block;
+      }
+
+      /* Hover   */
+      /* El selector :hover se aplica cuando el puntero del ratón pasa por encima de un elemento: */
+      a:hover {
+        color: blue;
+        text-decoration: line-through;
+      }
+
+      /* LINKS */
+      /* El selector :link aplica el estilo cuando el elemento no ha sido visitado antes: */
+      a:link {
+        color: green;
+      }
+
+      /* VISITED */
+      /* El selector :visited se aplica cuando el elemento ha sido visitado anteriormente en el navegador actual: */
+      /* a:visited {
+        color: red;
+      } */
+
+      /* FOCUS */
+      /* El selector :focus se aplica cuando un usuario ha hecho un tabulador sobre un elemento: */
+      a:focus {
+        color: red;
+      }
+
+      /* ACTIVE */
+      /* El selector :active se aplica cuando el elemento se selecciona después de hacer clic y después de mantener pulsado un botón del ratón: */
+      a:active {
+        color: aquamarine;
+      }
+
+      /* PSEUDO CLASES DE POCISION */
+      /* El selector de primer hijo, :first-child, selecciona el primer elemento, que será el primer hijo dentro del contenedor padre. */
+      .first-child-example p:first-child {
+        color: red;
+      }
+      /* El selector del último hijo, :last-child, selecciona el último elemento, que será el último hijo dentro del contenedor padre. */
+      .last-child-example p:last-child {
+        color: red;
+      }
+      /* El selector :nth-child() selecciona un elemento hijo dentro de un contenedor en función de su posición en un grupo de hermanos. */
+      /* Toma un número entero como argumento y selecciona un elemento en función del valor dado */
+      .nth-child-example p:nth-child(2) {
+        color: red;
+      }
+
+      /* El selector :nth-child() es útil cuando se desea seleccionar elementos basados en una expresión, como la selección de elementos pares o impares */
+      .nth-child-example-2 p:nth-child(odd) {
+        color: red;
+      }
+      /* El selector :first-of-type, selecciona los elementos que son los primeros de ese tipo específico en el contenedor padre. */
+      .first-of-type p:first-of-type {
+        color: blue;
+      }
+
+      /* El selector de último tipo, :last-of-type, selecciona los elementos que son los últimos de ese tipo específico en el contenedor padre. */
+      .last-of-type p:last-of-type {
+        color: green;
+      }
     </style>
   </head>
   <body>
@@ -184,6 +269,72 @@
         <p>I am a paragpah inside a div</p>
         <h3>I am a heading 003</h3>
         <p>I am a paragpah inside a div</p>
+      </div>
+      <hr />
+
+      <div id="adjacent-sibling-combinator">
+        <div class="adjacent">
+          <p>I am paragraph inside a div 01</p>
+        </div>
+        <p>I am a paragraph outside a div</p>
+        <h3>I am a level three heading</h3>
+        <p>I am a paragraph outside a div</p>
+      </div>
+
+      <hr />
+      <!-- PSEUDO CLASESS EXPANDED -->
+
+      <!-- Pseudo Selectors -->
+
+      <h3 class="diego">DIEGO</h3>
+      <hr />
+      <div id="pseudo-classes-links">
+        <!-- LINKS -->
+        <a href="https://wutangclan.com/" target="_blank">WU TANG LAND</a>
+      </div>
+      <hr />
+      <div class="pseudo-classes-position">
+        <div class="first-child-example">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <hr />
+        <div class="last-child-example">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <hr />
+        <div class="nth-child-example">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <hr />
+        <div class="nth-child-example-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <hr />
+        <div class="first-of-type">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <hr />
+        <div class="last-of-type">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
       </div>
     </section>
   </body>
