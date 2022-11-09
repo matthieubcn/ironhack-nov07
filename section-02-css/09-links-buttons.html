@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links & Buttons</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      /* Button Styling */
+      .btn {
+        background-color: #4c6ca0;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      /* SYNTAX PSuedo Selector */
+
+      /* .nombre-de-clase:hover{} */
+      /* #nombre-de-id:hover{} */
+      /* h3:hover{} */
+      /* .wu-tang div h3:hover{} */
+
+      /* 1st instance of pseudo selector */
+      .btn:hover {
+        background: #2e4161;
+        color: #fafafa;
+      }
+
+      .btn:active {
+        color: blue;
+      }
+
+      /* 2nd instance of pseudo selector */
+      a:active {
+        color: blue;
+      }
+
+      /* 3rd instance of pseudo selector  */
+      a:visited {
+        color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="btn">My Super Cool Link</a>
+
+    <button class="btn">My Button</button>
+
+    <a href="#">My Super cool link 2</a>
+  </body>
+</html>
