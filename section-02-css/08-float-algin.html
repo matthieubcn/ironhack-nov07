@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float & Align</title>
+
+    <!-- Style Tag -->
+    <style>
+      /* Universal */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Selector Universal - Body */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4em;
+      }
+
+      /* container */
+      .container {
+        max-width: 80%;
+        margin: 30px auto;
+      }
+
+      /* container boxes */
+      .box {
+        background: #f4f4f4;
+        border: solid 1px #000;
+        padding: 20px;
+        margin: 0 0 10px 0;
+        /* same as */
+        /* margin: 0px 0px 10px 0px; */
+      }
+
+      .box p {
+        text-align: justify;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      #box-2 {
+        float: left;
+        width: 65%;
+      }
+
+      #box-3 {
+        float: right;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">
+        <h3>Heading of my website</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cumque
+          tenetur a distinctio ratione nesciunt rem fugiat fuga perferendis
+          provident, minus eum. Hic nulla labore itaque debitis deleniti eaque
+          quo?
+        </p>
+      </div>
+      <div class="box" id="box-2">
+        <h3>Blog Posts</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+          similique ratione ipsum, nobis, modi fugit quis aliquam aliquid
+          tempore distinctio, exercitationem quos cumque provident! Saepe
+          eveniet fuga ab qui quos.
+        </p>
+      </div>
+      <div class="box" id="box-3">
+        <h3>Recent Projects</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+          aspernatur quibusdam error nam molestiae eligendi quas delectus?
+          Sapiente, commodi maxime ratione odio eos dolorem architecto dolore
+          nemo! Ab, non numquam?
+        </p>
+      </div>
+      <div class="clear"></div>
+      <div class="box" id="box-4">
+        <h3>Footer of my website</h3>
+        <a href="">Check out my linkedin</a>
+      </div>
+    </div>
+  </body>
+</html>
