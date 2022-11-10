@@ -51,11 +51,7 @@
   - [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
   - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
   - [Html Cheatsheet](https://devhints.io/html)
-  - [Css Cheatsheet](https://devhints.io/css)
-
-## Links de Ayuda
-
--[CSS Links]() -[Html Links]() -[JS Links]() -[Vue Links]()
+  - [Css Cheatsheet](https://devhints.io/css) -[CSS Links](#css) -[Html Links](#html) -[JS Links](#js) -[Vue Links](#vue)
 
 ## Comandos de Git
 
