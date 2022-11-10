@@ -37,13 +37,21 @@
   - [Box Model](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/07-box-model.html)
   - [Layout - Floats](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/08-float-algin.html)
   - [Links & Buttons](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/09-links-buttons.html)
+  - [Menu Styling](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/10-menu-styling.html)
+  - [Position](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/11-position.html)
+  - [Inline vs Block](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/12-inline-vs-block.html)
+  - [Media Queries](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/13-media-queries.html)
+  - [Media Queries Extended](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/14-media-queries-extended.html)
+  - [Media Query Example](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/15-media-query-example.html)
+  - [Flex Basics](https://github.com/dzc1/ironhack-nov07/blob/main/section-02-css/16-flex-basics.html)
 
-## Chuletas
+## Links de Ayuda
 
-- [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
-- [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
-- [Html Cheatsheet](https://devhints.io/html)
-- [Css Cheatsheet](https://devhints.io/css)
+- [Chuletas]
+  - [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+  - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+  - [Html Cheatsheet](https://devhints.io/html)
+  - [Css Cheatsheet](https://devhints.io/css)
 
 ## Links de Ayuda
 
