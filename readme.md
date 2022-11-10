@@ -98,3 +98,9 @@ Ver los `branches` asociados al repositorio.
 ```bash
 git branch
 ```
+
+Hacer un `pull` de los ultimos cambios de un repositorio git en gitHub a tu repo local
+
+```bash
+git pull origin "nombre del branch/rama que estaremos apuntando"
+```
