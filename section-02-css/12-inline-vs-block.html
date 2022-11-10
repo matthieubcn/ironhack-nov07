@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline VS Block</title>
+
+    <!-- LINK FOR REFERENCE - SPANISH-->
+    <!-- https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx -->
+    <style>
+      li {
+        display: inline;
+        list-style: none;
+      }
+
+      li a {
+        padding-right: 10px;
+      }
+
+      img {
+        display: inline;
+        width: 20%;
+      }
+
+      .box {
+        width: 32%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+
+    <br /><br />
+
+    <img src="./imgs/wu.png" alt="My image" />
+    <img src="./imgs/wu.png" alt="My image" />
+
+    <br /><br />
+
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure
+        in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure
+        in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure
+        in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!
+      </p>
+    </div>
+
+    <div class="hidden">I am a hidden element by display none</div>
+  </body>
+</html>
