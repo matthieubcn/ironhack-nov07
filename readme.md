@@ -93,6 +93,24 @@ git push origin "nombre del branch/rama que estaremos apuntando"
 git push
 ```
 
+### Combinations - Extended
+
+#### Combination #1
+
+Hace una combinacion de `git add commit push` usando estos comandos de `git` y usando un un operador logico `AND` con el syntax `&&`
+
+```bash
+git add . && git commit -m "Texto descriptivo de los cambios recientes" && git push origin "nombre del branch/rama que estaremos apuntando"
+```
+
+#### Combination #2 - Simplified
+
+Hace una combinacion de `git add commit push` usando estos comandos de `git` y usando un un operador logico `AND` con el syntax `&&`
+
+```bash
+git add . && git commit -m "Texto descriptivo de los cambios recientes" && git push
+```
+
 Ver los `branches` asociados al repositorio.
 
 ```bash
