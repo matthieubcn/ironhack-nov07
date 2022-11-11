@@ -52,8 +52,8 @@
   - [Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
   - [Html Cheatsheet](https://devhints.io/html)
   - [Css Cheatsheet](https://devhints.io/css)
-  - [Videos](#videos)
-    - [Welcome to the Internet - Bo Burnham](https://www.youtube.com/watch?v=k1BneeJTDcU)
+- [Videos](#videos)
+  - [Welcome to the Internet - Bo Burnham](https://www.youtube.com/watch?v=k1BneeJTDcU)
 
 ## Comandos de Git
 
