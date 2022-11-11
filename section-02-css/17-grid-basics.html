@@ -64,7 +64,10 @@
 
       .container-example-repeat-notation {
         display: grid;
-        grid-template-columns: repeat(5, 1fr [col-start]);
+        /* single namin convention */
+        /* grid-template-columns: repeat(5, 1fr [col-start]); */
+        /* multi naming convention */
+        grid-template-columns: repeat(5, 1fr [col-start col-end]);
         grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
         outline: 1px solid red !important;
         height: 20rem;
@@ -96,14 +99,14 @@
         outline: 1px solid red !important;
         height: 20rem;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas:
           "header header header header"
           "main main main sidebar"
           "footer footer footer footer";
       }
-      .item-a {
+      /* .item-a {
         grid-area: header;
         background-color: #f05d23;
       }
@@ -118,7 +121,95 @@
       .item-d {
         grid-area: footer;
         background-color: #261c15;
+      } */
+
+      /* GRID TEMPLATE */
+      .container-example-grid-template {
+        outline: 1px solid red !important;
+        height: 20rem;
+        display: grid;
+        grid-template: [row1-start] 25% [row2-start] 25% / auto auto;
       }
+
+      .container-example-grid-template-2 {
+        outline: 1px solid red !important;
+        height: 20rem;
+        display: grid;
+        grid-template: 25% 25% 25% / auto auto;
+      }
+
+      .container-example-grid-template-3 {
+        outline: 1px solid red !important;
+        height: 20rem;
+        display: grid;
+        grid-template: [row1-start] "header header header" 25% [row1-end] [row2-start] "footer footer footer" 25% [row2-end] / auto auto;
+      }
+      .container-example-grid-template-3-breakdown {
+        outline: 1px solid red !important;
+        height: 20rem;
+        display: grid;
+        grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+        grid-template-columns: auto auto;
+        grid-template-areas: "header header header" "footer footer footer";
+      }
+
+      .container-example-gap-breakdown {
+        outline: 1px solid red !important;
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 80px auto 80px;
+        /* column-gap: 10px;
+        row-gap: 20px; */
+        gap: 20px;
+        gap: 20px 50px;
+        /* en caso de arriba primero(20px) es row y segundo es column(50px) */
+      }
+
+      /* GRID ITEMS */
+      .container-example-grid-items {
+        display: grid;
+        outline: 1px solid red;
+        height: 20rem;
+        grid-template-columns: 40px 50px auto 50px 40px;
+        grid-template-rows: 25% 100px auto;
+      }
+
+      .item-a {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: #f05d23;
+      }
+
+      .container-example-grid-items-1 {
+        display: grid;
+        outline: 1px solid red;
+        height: 20rem;
+        grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+        grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+      }
+      .item-b {
+        grid-column-start: 1;
+        grid-column-end: col4-start;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        background-color: black;
+      }
+      .item-c {
+        grid-column: 3 / span 2;
+        grid-row: third-line / 4;
+        background-color: red;
+      }
+      /* WITH SPAN SYNTAX */
+      /* .item-b {
+        grid-column-start: 1;
+        grid-column-end: span col4-start;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+        background-color: black;
+      } */
     </style>
   </head>
   <body>
@@ -294,7 +385,7 @@
               </li>
             </ul>
             <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
-            <div class="container-example-fractions-2"></div>
+            <div class="container-example-grid-template-3"></div>
             <!-- container-example-simple-grid -->
             <p>
               A las líneas de la cuadrícula se les asignan automáticamente
@@ -431,7 +522,8 @@
               </li>
             </ul>
             <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
-            <div class="container-example-grid-template-3-breakdown"></div>
+            <h1>Gap example here</h1>
+            <div class="container-example-gap-breakdown"></div>
           </li>
           <!-- column-gap row-gap grid-column-gap grid-row-gap -->
           <li>
@@ -509,10 +601,12 @@
             </ul>
             <!-- UNCOMMENT TO SHOW CODE EXAMPLES FROM BELOW -->
             <!-- container-example-grid-items -->
+            <h1>Grid Items Example - 1</h1>
             <div class="container-example-grid-items">
               <div class="item-a"></div>
             </div>
             <!-- container-example-grid-items-1 -->
+            <h1>Grid Items Example - 2</h1>
             <div class="container-example-grid-items-1">
               <div class="item-b"></div>
             </div>
