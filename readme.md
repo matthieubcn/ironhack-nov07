@@ -14,6 +14,11 @@
 
 [Zoom Link](https://ironhack.zoom.us/j/93120423452)
 
+## Collaborative Playlist - Ironship
+
+Agregr sus canciones favoritas a esta playlist en spotify!
+[Playlist](https://open.spotify.com/playlist/0DLu3mChatQhUy1lmOxaRK?si=abcb5d994f4e4e89&pt=dd0de0caee6045d6a931550b8af185ad)
+
 ## Estructura de Carpetas
 
 - [Html Basics](https://github.com/dzc1/ironhack-nov07/tree/main/section-01-html)
