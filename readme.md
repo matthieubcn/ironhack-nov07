@@ -64,6 +64,11 @@ Agregr sus canciones favoritas a esta playlist en spotify!
 - [Icon Libraries](#icon-libraries)
   - [Font Awesome](https://fontawesome.com/)
   - [The Noun Project](https://thenounproject.com/)
+- [Tools and Helpful Links](#tools)
+  - [CSS Grid Generator](https://cssgrid-generator.netlify.app/)
+  - [CSS Flex Generator](https://flexbox.help/)
+  - [CSS Shadows](https://htmlcssfreebies.com/css-box-shadow-examples/)
+  - [CSS Animations](https://animista.net/)
 
 ## Comandos de Git
 
