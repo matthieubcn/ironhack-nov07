@@ -7,7 +7,7 @@
   Este repositorio sirve como una guia para la clase de FE Dev - Vue Conforcat. Done estaremos apendiendo acerca de HTML, CSS3, Javascript, Vue & Supabase.
 </p>
  <p align="center" style="font: 16px">
- Creado con ❤️ por Diego Zito, Carlos Garrido & Aleix Abuli.
+ Creado con ❤️ por Diegoo Zito, Carlos Garrido & Aleix Abuli.
 </p>
 
 ## Link a Zoom
