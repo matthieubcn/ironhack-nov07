@@ -103,7 +103,7 @@ git push origin "nombre del branch/rama que estaremos apuntando"
 `Empujar` los cambios recientes a tu repositorio en la web. `Simplified`.
 
 ```bash
-git pushs
+git push
 ```
 
 ### Combinations
