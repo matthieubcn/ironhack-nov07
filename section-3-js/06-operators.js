@@ -23,82 +23,82 @@ console.log(add);
 // Si miramos el ejemplo en la linea 6, el operador de asignacion "=" es lo que usamos para apuntar/asignar la operacion matematica con la variable "add"...
 
 console.log("Assignment Operators");
-// console.table([
-//   {
-//     operator: "=",
-//     name: "Assignment operator",
-//     example: "a = 7; // 7",
-//   },
-//   {
-//     operator: "+=",
-//     name: "Addition operator",
-//     example: "a += 5; // a = a + 5",
-//   },
-//   {
-//     operator: "-=",
-//     name: "Subtraction Assignment",
-//     example: "a -= 2; // a = a - 2",
-//   },
-//   {
-//     operator: "*=",
-//     name: "Multiplication Assignment",
-//     example: "a *= 3; // a = a * 3",
-//   },
-//   {
-//     operator: "/=",
-//     name: "Division Assignment",
-//     example: "a /= 2; // a = a / 2",
-//   },
-//   {
-//     operator: "%=",
-//     name: "Remainder Assignment",
-//     example: "a %= 2; // a = a % 2",
-//   },
-//   {
-//     operator: "**=",
-//     name: "Exponentiation Assignment",
-//     example: "a **= 2; // a = a**2",
-//   },
-// ]);
+console.table([
+  {
+    operator: "=",
+    name: "Assignment operator",
+    example: "a = 7; // 7",
+  },
+  {
+    operator: "+=",
+    name: "Addition operator",
+    example: "a += 5; // a = a + 5",
+  },
+  {
+    operator: "-=",
+    name: "Subtraction Assignment",
+    example: "a -= 2; // a = a - 2",
+  },
+  {
+    operator: "*=",
+    name: "Multiplication Assignment",
+    example: "a *= 3; // a = a * 3",
+  },
+  {
+    operator: "/=",
+    name: "Division Assignment",
+    example: "a /= 2; // a = a / 2",
+  },
+  {
+    operator: "%=",
+    name: "Remainder Assignment",
+    example: "a %= 2; // a = a % 2",
+  },
+  {
+    operator: "**=",
+    name: "Exponentiation Assignment",
+    example: "a **= 2; // a = a**2",
+  },
+]);
 
 console.log("Arithemical Operators");
-// console.table([
-//   {
-//     operator: "+",
-//     name: "Add",
-//     example: "2+2 // 4",
-//   },
-//   {
-//     operator: "-",
-//     name: "Substract",
-//     example: "4-2 // 2",
-//   },
-//   {
-//     operator: "*",
-//     name: "Multiplication",
-//     example: "4 * 4 // 16",
-//   },
-//   {
-//     operator: "/",
-//     name: "Division",
-//     example: "3 /3 // 1",
-//   },
-//   {
-//     operator: "++",
-//     name: "Increment (increments by 1)",
-//     example: "4++ // 5",
-//   },
-//   {
-//     operator: "--",
-//     name: "Decrement (decrements by 1)",
-//     example: "4-- // 3",
-//   },
-//   {
-//     operator: "**",
-//     name: "Exponentiation (Power)",
-//     example: "2**2 // 8",
-//   },
-// ]);
+console.table([
+  {
+    operator: "+",
+    name: "Add",
+    example: "2+2 // 4",
+  },
+  {
+    operator: "-",
+    name: "Substract",
+    example: "4-2 // 2",
+  },
+  {
+    operator: "*",
+    name: "Multiplication",
+    example: "4 * 4 // 16",
+  },
+  {
+    operator: "/",
+    name: "Division",
+    example: "3 /3 // 1",
+  },
+  {
+    operator: "++",
+    name: "Increment (increments by 1)",
+    example: "4++ // 5",
+  },
+  {
+    operator: "--",
+    name: "Decrement (decrements by 1)",
+    example: "4-- // 3",
+  },
+  {
+    operator: "**",
+    name: "Exponentiation (Power)",
+    example: "2**2 // 8",
+  },
+]);
 
 // JS Comparison Operators
 // Operadores de comparasion, comparan dos tipos de valores o mas+ y te retornan un valor booleanico.
@@ -111,54 +111,54 @@ console.log("Comparing these 2 numbers");
 console.log(number1 > number2);
 
 console.log("Comparison Operators");
-// console.table([
-//   {
-//     operator: "==",
-//     description: "Equal to: returns true if the operands are equal",
-//     example: "x == y",
-//   },
-//   {
-//     operator: "!=",
-//     description: "Not equal to: returns true if the operands are not equal",
-//     example: "x != y",
-//   },
-//   {
-//     operator: "===",
-//     description:
-//       "Strict equal to: true if the operands are equal and of the same type",
-//     example: "x === y",
-//   },
-//   {
-//     operator: "!==",
-//     description:
-//       "Strict not equal to: true if the operands are equal but of different type or not equal at all",
-//     example: "x !== y",
-//   },
-//   {
-//     operator: ">",
-//     description:
-//       "Greater than: true if left operand is greater than the right operand",
-//     example: "x > y",
-//   },
-//   {
-//     operator: ">=",
-//     description:
-//       "Greater than or equal to: true if left operand is greater than or equal to the right operand",
-//     example: "x >= y",
-//   },
-//   {
-//     operator: "<",
-//     description:
-//       "Less than: true if the left operand is less than the right operand",
-//     example: "x < y",
-//   },
-//   {
-//     operator: "<=",
-//     description:
-//       "Less than or equal to: true if the left operand is less than or equal to the right operand",
-//     example: "x <= y",
-//   },
-// ]);
+console.table([
+  {
+    operator: "==",
+    description: "Equal to: returns true if the operands are equal",
+    example: "x == y",
+  },
+  {
+    operator: "!=",
+    description: "Not equal to: returns true if the operands are not equal",
+    example: "x != y",
+  },
+  {
+    operator: "===",
+    description:
+      "Strict equal to: true if the operands are equal and of the same type",
+    example: "x === y",
+  },
+  {
+    operator: "!==",
+    description:
+      "Strict not equal to: true if the operands are equal but of different type or not equal at all",
+    example: "x !== y",
+  },
+  {
+    operator: ">",
+    description:
+      "Greater than: true if left operand is greater than the right operand",
+    example: "x > y",
+  },
+  {
+    operator: ">=",
+    description:
+      "Greater than or equal to: true if left operand is greater than or equal to the right operand",
+    example: "x >= y",
+  },
+  {
+    operator: "<",
+    description:
+      "Less than: true if the left operand is less than the right operand",
+    example: "x < y",
+  },
+  {
+    operator: "<=",
+    description:
+      "Less than or equal to: true if the left operand is less than or equal to the right operand",
+    example: "x <= y",
+  },
+]);
 // console.log(8 == 8);
 // console.log(8 != 4);
 // console.log(8 === "8");
@@ -220,3 +220,24 @@ function addTwoNumbers(number1, number2) {
 }
 
 console.log(addTwoNumbers(4, 8));
+
+// 3 variables...
+
+// 1. que operador logico me permite que si num y str son equivalentes sean true.!
+// 2. que operador nos permite saber si num y str no son iguales.
+// 3. que num es una edad, el usuario ha metido un num equivalente a una eda como podemos saber si la edad es mayor que 18, menor que 18 o mayorQue o igual 18
+
+// num
+// str
+// obj
+
+let num;
+let str;
+
+num = 8;
+str = "18";
+
+console.log(num == str);
+console.log(num === str);
+console.log(str < 18 || str == 18);
+console.log(str <= 18);
