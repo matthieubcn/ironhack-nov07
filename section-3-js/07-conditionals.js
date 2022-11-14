@@ -74,14 +74,52 @@
 // Ejemplo
 // Number Check
 
-const drinkingAge = parseInt(prompt("Want to buy beer? - let me see your ID"));
+// const drinkingAge = parseInt(prompt("Want to buy beer? - let me see your ID"));
 
-if (drinkingAge < 18) {
-  console.log("I am sorry son, but you are too young to be buying alcohol.");
-} else if (drinkingAge === 18) {
-  console.log("You just turned 18, what type of beer would you want to enjoy:");
-} else if (drinkingAge >= 18 && drinkingAge < 40) {
-  console.log("Enjoy your night, but one drink at a time");
-} else if (drinkingAge >= 40) {
-  console.log("Enjoy your night, remember that the hangover is real!");
+// if (drinkingAge < 18) {
+//   console.log("I am sorry son, but you are too young to be buying alcohol.");
+// } else if (drinkingAge === 18) {
+//   console.log("You just turned 18, what type of beer would you want to enjoy:");
+// } else if (drinkingAge >= 18 && drinkingAge < 40) {
+//   console.log("Enjoy your night, but one drink at a time");
+// } else if (drinkingAge >= 40) {
+//   console.log("Enjoy your night, remember that the hangover is real!");
+// }
+
+//Class Excercise - MOVIE THEATER :)
+
+// <= 5 - Gratis
+// < 15 - tienes un 20%
+// >= 15 y <=60 - pagan regular
+//si el usuario +60 - tiene 40%
+
+// ------------------------------
+// NESTED - CONDICIONALES ADINADOS
+// Podemos adinar condicionales dentro de condicionales si queremos :)
+
+const number = prompt("Enter a number:   ");
+
+if (number >= 0) {
+  if (number === 0) {
+    console.log("This input is = to 0");
+  } else if (number >= 1 && number <= 3) {
+    console.log("Your number is between 1 & 3");
+  } else {
+    console.log("Your number is a positive number bigger than 0");
+  }
+} else {
+  console.log("You entered a negative number");
 }
+
+// Reduciendo un poco de codigo
+// Si tus condicionales son 50/50 (if else) puedes optar por una syntaxis mas limpias sin tener que agregar las {}
+
+// ESTO PASA A
+// if (number > 0) {
+//     // ejecucion de este bloque de codigo
+// } else {
+//     // ejecucion de este bloque de codigo
+// }
+// ESTO
+// if (number > 0) // ejecucion de este bloque de codigo
+// else  // ejecucion de este bloque de codigo
