@@ -9,6 +9,8 @@
 // 2. if...else statement
 // 3. else...if statement
 
+// -----------------------
+
 //JS - IF Statement
 
 // Syntax
@@ -28,6 +30,8 @@
 //   );
 // }
 
+// -----------------------
+
 // JS  - IF ELSE Statement
 // Si un IF tiene un condicional opcional, podemos usar este condiconal opcional para ejecutar codigo en base que la condicion IF inicial sea falsa.
 // Syntax
@@ -46,6 +50,7 @@
 //   );
 // }
 
+// -----------------------
 //JS - ELSE IF Statement
 // El condicional else if nos habilita la capacidad de condicionar +1(multiples) alternativas en base a las condiciones que queramos.
 // Syntax - terminando con un else {}
@@ -71,8 +76,9 @@
 //   // ejecucion de este bloque de codigo
 // }
 
-// Ejemplo
-// Number Check
+// -----------------------
+// Ejemplo - else if
+// Age Check
 
 // const drinkingAge = parseInt(prompt("Want to buy beer? - let me see your ID"));
 
@@ -86,6 +92,7 @@
 //   console.log("Enjoy your night, remember that the hangover is real!");
 // }
 
+// -----------------------
 //Class Excercise - MOVIE THEATER :)
 
 // <= 5 - Gratis
@@ -97,19 +104,21 @@
 // NESTED - CONDICIONALES ADINADOS
 // Podemos adinar condicionales dentro de condicionales si queremos :)
 
-const number = prompt("Enter a number:   ");
+// const number = prompt("Enter a number:   ");
 
-if (number >= 0) {
-  if (number === 0) {
-    console.log("This input is = to 0");
-  } else if (number >= 1 && number <= 3) {
-    console.log("Your number is between 1 & 3");
-  } else {
-    console.log("Your number is a positive number bigger than 0");
-  }
-} else {
-  console.log("You entered a negative number");
-}
+// if (number >= 0) {
+//   if (number === 0) {
+//     console.log("This input is = to 0");
+//   } else if (number >= 1 && number <= 3) {
+//     console.log("Your number is between 1 & 3");
+//   } else {
+//     console.log("Your number is a positive number bigger than 0");
+//   }
+// } else {
+//   console.log("You entered a negative number");
+// }
+
+// -----------------------
 
 // Reduciendo un poco de codigo
 // Si tus condicionales son 50/50 (if else) puedes optar por una syntaxis mas limpias sin tener que agregar las {}
@@ -123,3 +132,9 @@ if (number >= 0) {
 // ESTO
 // if (number > 0) // ejecucion de este bloque de codigo
 // else  // ejecucion de este bloque de codigo
+
+//Ejemplo de reduccion
+const number2 = prompt("Enter a number between 1-2");
+
+if (number === 1) console.log("You chose 1");
+else console.log("You chose 2");
