@@ -1,6 +1,4 @@
 // JavaScript Variables
-// ref - https://www.programiz.com/javascript/variables-constants
-
 // En programacion, una variable coloquialmente se define como un contenedor (storage area) donde contenemos/guardamos informacion/data.
 
 //Ejemplo:
