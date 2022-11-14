@@ -9,6 +9,9 @@
  <p align="center" style="font: 16px">
  Creado con ❤️ por Diegoo Zito, Carlos Garrido & Aleix Abuli.
 </p>
+<p align="center" style="font: 16px">
+ Quote of the class "Qui no corre, vola"
+</p>
 
 ## Link a Zoom
 
