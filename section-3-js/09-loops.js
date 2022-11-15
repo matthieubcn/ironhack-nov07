@@ -153,6 +153,22 @@ while (lengthOfWhileObjectExample--) {
 
 // EJERCICIO - 001
 // Dado un array, devuelve el tipo de dato que hay en cada una de sus posiciones.
+let arrayExample = ["hola", "patata", 12, "adios", 11];
+let arrayExampleString = ["hola", "patata", "adios"];
+let arrayExamplenumber = [14, -42, 22];
+
+// Simplified
+for (let i = 0; i >= arrayExample.length; i++) {
+  console.log(typeof param[i]);
+}
+
+// Version Extended - FUNCTION
+function devolverPosicion(param) {
+  param.forEach((element) => {
+    console.log(typeof element);
+  });
+}
+devolverPosicion(arrayExample);
 
 // EJERCICIO - 002
 // Creamos un array de strings con nombres de personajes famosos. Lo vamos a recorrer todo e imprimiremos la misma frase para cada uno (algo como "X is so famous, I love them.").
