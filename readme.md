@@ -10,7 +10,10 @@
  Creado con ❤️ por Diegoo Zito, Carlos Garrido & Aleix Abuli.
 </p>
 <p align="center" style="font: 16px">
- Quote of the class "Qui no corre, vola"
+ Quote of the class
+</p>
+<p align="center" style="font: 16px; font-style: italic">
+ "Qui no corre, vola"
 </p>
 
 ## Link a Zoom
