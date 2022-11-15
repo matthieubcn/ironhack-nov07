@@ -94,5 +94,39 @@ const arrReduce = [1, 2, 3, 4, 5, 1, 0, 7];
 const reduced = arrReduce.reduce((total, current) => total + current);
 console.log(reduced);
 
+//EJERCICIO - 001
 // //Crea una función que añada el primer elemento al principio de un array y el segundo elemento al final del mismo array.
 // ya estos metodosNativo de Array existen :)
+
+// ------------------------------ //
+//  ------------- PART 2 ----------------- //
+
+// 11. find()
+// Este método devuelve el valor del primer elemento de un array que supera la prueba en una función de comprobación.
+
+// 12. findInIndex()
+// Este método devuelve el índice del primer elemento de un array que supera la prueba en una función de comprobación.
+
+// 13. indexOff()
+// Este método devuelve el índice de la primera aparición del elemento especificado en la matriz, o -1 si no se encuentra.
+
+// 14. fill()
+// Este método rellena los elementos de un array con un valor estático y devuelve el array modificado.
+
+// 15. slice()
+// Este método devuelve un nuevo array con los elementos especificados de inicio a fin.
+
+// 16. reverse()
+// Este método invierte un array en su lugar. El elemento en el último índice será el primero y el elemento en el índice 0 será el último.
+
+// 17. push()
+// Este método añade uno o más elementos al final del array y devuelve la nueva longitud del mismo.
+
+// 18. pop()
+// Este método elimina el último elemento del final del array y devuelve ese elemento.
+
+// 19. shift()
+// Este método añade uno o más elementos al principio de una matriz y devuelve la nueva longitud de la misma.
+
+// 20. unshift()
+// Este método añade uno o más elementos al principio de una matriz y devuelve la nueva longitud de la misma.
