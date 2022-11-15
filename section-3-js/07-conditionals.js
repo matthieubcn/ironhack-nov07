@@ -136,5 +136,5 @@
 //Ejemplo de reduccion
 const number2 = prompt("Enter a number between 1-2");
 
-if (number === 1) console.log("You chose 1");
+if (number2 == 1) console.log("You chose 1");
 else console.log("You chose 2");
