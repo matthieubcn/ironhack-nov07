@@ -134,7 +134,135 @@
 // else  // ejecucion de este bloque de codigo
 
 //Ejemplo de reduccion
-const number2 = prompt("Enter a number between 1-2");
+// const number2 = prompt("Enter a number between 1-2");
 
-if (number2 == 1) console.log("You chose 1");
-else console.log("You chose 2");
+// if (number2 == 1) console.log("You chose 1");
+// else console.log("You chose 2");
+
+// ------------------------------
+// JS -  Switch Statement
+// El statmente "switch" evalúa una expresión y ejecuta el cuerpo correspondiente que coincide con el resultado de la expresión.
+
+// Syntax:
+// switch (variable / expression) {
+//   case value1:
+//     // ejecucion de este bloque de codigo 1
+//     break;
+
+//   case value2:
+//     // ejecucion de este bloque de codigo 2
+//     break;
+
+//   case valueN:
+//     // ejecucion de este bloque de codigo N
+//     break;
+
+//   default:
+//   // ejecucion de este bloque de codigo default
+// }
+//BREAKDOWN
+// El switch statement evalúa una variable/expresión entre paréntesis ().
+// Si el resultado de la expresión es igual al valor1, se ejecuta su cuerpo.
+// Si el resultado de la expresión es igual al valor2, se ejecuta su cuerpo.
+// Este proceso continúa. Si no hay ningún caso que coincida, se ejecuta el cuerpo por defecto.
+
+// IMPORTANTE:
+// - El statement "break" es opcional.Si se encuentra el statement break, El switch statement switch termina.
+// - Si no se utiliza el statement break, también se ejecutan los casos posteriores al caso coincidente.
+// - "Default" por defecto también es opcional.
+
+// Ejemplo sencillo - sin type checking
+let switchExample1 = 2;
+switch (switchExample1) {
+  case 1:
+    switchExample1 = "one";
+    break;
+  case 2:
+    switchExample1 = "two";
+    break;
+  default:
+    switchExample1 = "not found";
+    break;
+}
+console.log(`The value is ${switchExample1}`);
+console.log("-------------------");
+
+// ejemplo Sencillo - con type checking
+//IMPORTANTE
+//En JavaScript, el "switch" statement comprueba los casos estrictamente (deben ser del mismo tipo de datos) con el resultado de la expresión. Observamos que en el ejemplo posterior, 1 no coincide con "1".
+// let switchExample2 = 1;
+// switch (switchExample2) {
+//   case "1":
+//     switchExample2 = 1;
+//     break;
+//   case 1:
+//     switchExample2 = "one";
+//     break;
+//   case 2:
+//     switchExample2 = "two";
+//     break;
+//   default:
+//     switchExample2 = "not found";
+//     break;
+// }
+// console.log(`The value is ${switchExample2}`);
+console.log("-------------------");
+
+// Ejemplo complejo - SWiTCH - CALCULADORA
+console.log("SWITCH - Simple Calculator");
+// inicializamos una variable para poder asignarle un valor luego (operacion matematica)
+// let result;
+
+// // Input del operando que va a usar el usuario (x, +, -, /)
+// const operator = prompt("Enter operator ( either +, -, * or / ): ");
+
+// // Variables para recibir los numeros(inputs) del usuario
+// const calcNum1 = parseFloat(prompt("Enter 1st number: "));
+// const calcNum2 = parseFloat(prompt("Enter 2nd number: "));
+
+// switch (operator) {
+//   case "+":
+//     result = calcNum1 + calcNum2;
+//     console.log(`${calcNum1} + ${calcNum2} = ${result}`);
+//     break;
+//   case "-":
+//     result = calcNum1 - calcNum2;
+//     console.log(`${calcNum1} - ${calcNum2} = ${result}`);
+//     break;
+//   case "*":
+//     result = calcNum1 * calcNum2;
+//     console.log(`${calcNum1} * ${calcNum2} = ${result}`);
+//     break;
+//   case "/":
+//     result = calcNum1 / calcNum2;
+//     console.log(`${calcNum1} / ${calcNum2} = ${result}`);
+//     break;
+//   default:
+//     console.log(
+//       "This is not a valid operator for this simple calculator, if you want power go invest on a TI - 30XIIS Calculator, don't be cheap.... or just use your phone... "
+//     );
+// }
+console.log("-------------------");
+
+console.log("SWITCH - Multiple Cases");
+// Ejemplo complejo - SWITCH - COUNTRY CONTINET FINDER - CASOS MULTIPLES
+const countryOfOrigin = prompt("What country where you born?");
+switch (countryOfOrigin) {
+  case "Venezuela":
+  case "Colombia":
+  case "Ecuador":
+  case "Brazil":
+    alert(`Cool, ${countryOfOrigin} is located in South America`);
+    console.log(`Cool, ${countryOfOrigin} is located in South America`);
+    break;
+  case "Spain":
+  case "France":
+  case "Portugal":
+  case "Andorra":
+    alert(`Cool, ${countryOfOrigin} is locaded in Europe`);
+    console.log(`Cool, ${countryOfOrigin} is locaded in Europe`);
+    break;
+  default:
+    alert("you are not from this planet! go Invade somewhere else...");
+    console.log("you are not from this planet! go Invade somewhere else...");
+}
