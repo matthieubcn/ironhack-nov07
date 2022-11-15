@@ -167,7 +167,58 @@ console.log(resultOfSum);
 // EJERCICIO #1
 // Crea una función que reciba tres argumentos: una string name, un numero age y un objeto livesIn. Ten en cuenta que el objeto livesIn será un objeto que contiene dos keys: livesInCity y livesInTown. Las dos tendrán un valor booleánico y siempre será una falsa y la otra verdadera.
 // Crea una función tipo flecha que retorne una string parecida a "Diego tiene 30 años y vive en la ciudad".Según la key que sea true en el argumento livesIn vamos a retornar vive en la ciudad o vive en un pueblo.
-
-//console.log(miFuncion("Jarko", 25, {livesInCity: true, livesInTown: false}));
-//console.log(miFuncion("Martina", 42, {livesInCity: false, livesInTown: true}));
-//console.log(miFuncion("Laia", 78, { livesInCity: false, livesInTown: true }));
+// Ejercicio 01 - 001
+console.log("-------------------");
+console.log("Ejercicio 01 - 2 respuestas diferentes");
+function miFuncion(name, age, livesIn) {
+  /* if (livesIn.livesInCity === true) {
+    return `${name} tiene ${age} años y vive en la ciudad.`;
+  } else {
+    return `${name} tiene ${age} años y vive en un pueblo`;
+  } */
+  if (livesIn.livesInCity)
+    return `${name} tiene ${age} años y vive en la ciudad.`;
+  else return `${name} tiene ${age} años y vive en un pueblo.`;
+}
+console.log(
+  miFuncion("Martina", 42, { livesInCity: false, livesInTown: true })
+);
+// Ejercicio 01 - 002
+console.log("-------------------");
+console.log("Ejercicio 01 - Arrow function con ternario");
+const miFuncion2 = (name, age, livesIn) =>
+  livesIn.livesInCity
+    ? `${name} tiene ${age} años y vive en la ciudad.`
+    : `${name} tiene ${age} años y vive en un pueblo.`;
+console.log(
+  miFuncion2("Martina", 42, { livesInCity: false, livesInTown: true })
+);
+// Ejercicio 01 - 003
+console.log("-------------------");
+console.log("Ejercicio 01 - Arrow function con condicional normal");
+const miFuncion3 = (name, age, livesIn) => {
+  if (livesIn.livesInCity)
+    return `${name} tiene ${age} años y vive en la ciudad.`;
+  else return `${name} tiene ${age} años y vive en un pueblo.`;
+};
+console.log(
+  miFuncion3("Martina", 42, { livesInCity: false, livesInTown: true })
+);
+// Ejercicio 01 - 003
+console.log("-------------------");
+console.log("Ejercicio 01 - Arrow function con switch");
+const miFuncion4 = (name, age, livesIn) => {
+  let tCity;
+  switch (true) {
+    case livesIn.livesInCity:
+      tCity = "ciudad";
+      break;
+    case livesIn.livesInTown:
+      tCity = "pueblo";
+      break;
+    default:
+      break;
+  }
+  return `${name} tiene ${age} años y vive en un ${tCity}.`;
+};
+console.log(miFuncion4("Jarko", 25, { livesInCity: true, livesInTown: false }));
