@@ -126,7 +126,7 @@ console.log(reduced);
 // Este método elimina el último elemento del final del array y devuelve ese elemento.
 
 // 19. shift()
-// Este método añade uno o más elementos al principio de una matriz y devuelve la nueva longitud de la misma.
+// Este método elimina el primer elemento al principio de una matriz y devuelve la nueva longitud de la misma.
 
 // 20. unshift()
 // Este método añade uno o más elementos al principio de una matriz y devuelve la nueva longitud de la misma.
