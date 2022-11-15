@@ -60,6 +60,9 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Variables](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/05-variables.js)
   - [Operators](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/06-operators.js)
   - [Conditionals](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/07-conditionals.js)
+  - [Functions](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/08-functions.js)
+  - [Loops](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/09-loops.js)
+  - [Array Methods](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/10-array-methods.js)
 
 ## Links de Ayuda
 
