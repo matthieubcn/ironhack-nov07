@@ -204,7 +204,7 @@ const miFuncion3 = (name, age, livesIn) => {
 console.log(
   miFuncion3("Martina", 42, { livesInCity: false, livesInTown: true })
 );
-// Ejercicio 01 - 003
+// Ejercicio 01 - 004
 console.log("-------------------");
 console.log("Ejercicio 01 - Arrow function con switch");
 const miFuncion4 = (name, age, livesIn) => {
