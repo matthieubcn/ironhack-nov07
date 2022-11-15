@@ -6,6 +6,8 @@
 const arr = [1, 2, 3, 4, 5, 1, 0, 7];
 const animals = ["dog", "cat", "parrot", "cow", "cheetah", "horse"];
 
+// LISTA DE METODOS
+
 // 1. map()
 // Este método crea un nuevo array con los resultados de llamar a una función proporcionada en cada elemento de este array.
 // Ejemplo 1 - numeros
