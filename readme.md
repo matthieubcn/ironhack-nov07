@@ -12,7 +12,7 @@
 <p align="center" style="font: 16px">
  Quote of the class
 </p>
-<p align="center" style="font: 16px; font-style: italic">
+<p align="center" style="font:16px; font-style:italic">
  "Qui no corre, vola"
 </p>
 
