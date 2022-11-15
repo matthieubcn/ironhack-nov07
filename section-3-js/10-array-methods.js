@@ -93,3 +93,6 @@ console.log(joinArray.join(""));
 const arrReduce = [1, 2, 3, 4, 5, 1, 0, 7];
 const reduced = arrReduce.reduce((total, current) => total + current);
 console.log(reduced);
+
+// //Crea una función que añada el primer elemento al principio de un array y el segundo elemento al final del mismo array.
+// ya estos metodosNativo de Array existen :)
