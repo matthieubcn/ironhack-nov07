@@ -267,7 +267,7 @@ console.log("SWITCH - Multiple Cases");
 //     console.log("you are not from this planet! go Invade somewhere else...");
 // }
 
-// Ejemplo complejo - SWITCH - COUNTRY CONTINET FINDER - CASOS MULTIPLES
+// Ejemplo complejo - SWITCH - COUNTRY CONTINET FINDER - CASOS MULTIPLES - toLowerCaseMethod()
 const countryOfOrigin = prompt("What country where you born?");
 switch (countryOfOrigin.toLowerCase()) {
   case "venezuela":
