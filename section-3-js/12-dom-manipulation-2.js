@@ -137,11 +137,10 @@ console.log(firstChildEl);
 
 // Si tiene la clase y haces clic en el botón, lo elimina. Si no tiene la clase y haces clic en el botón, la añade.
 
-const buttonEl = document.querySelector("#master");
-
-const toggleFunction = () =>
-  document.querySelector(".box-display").classList.toggle("remove-test");
-buttonEl.addEventListener("click", toggleFunction);
+// const buttonEl = document.querySelector("#master");
+// const toggleFunction = () =>
+//   document.querySelector(".box-display").classList.toggle("remove-test");
+// buttonEl.addEventListener("click", toggleFunction);
 
 // ----------------
 // ----------------
