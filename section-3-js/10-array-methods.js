@@ -105,30 +105,62 @@ console.log(reduced);
 
 // 11. find()
 // Este método devuelve el valor del primer elemento de un array que supera la prueba en una función de comprobación.
+const found = arr.find((element) => element > 2);
+console.log(found);
 
 // 12. findInIndex()
 // Este método devuelve el índice del primer elemento de un array que supera la prueba en una función de comprobación.
+const animals2 = ["dog", "cat", "parrot", "cow", "cheetah", "horse"];
+const indexFinder = animals2.findIndex((element) => element === "cheetah");
+console.log(indexFinder);
 
 // 13. indexOff()
 // Este método devuelve el índice de la primera aparición del elemento especificado en la matriz, o -1 si no se encuentra.
+const indexFinderOf = animals2.indexOf("dogs");
+const indexFinderOfTwo = animals2.indexOf("dog");
+console.log(indexFinderOf);
+console.log(indexFinderOfTwo);
 
 // 14. fill()
 // Este método rellena los elementos de un array con un valor estático y devuelve el array modificado.
+const fillMode = new Array(4);
+console.log(fillMode);
+//Singular
+console.log(fillMode.fill(["Diego"]));
+// Plurar
+console.log(fillMode.fill(["Diego", "hello", "Marco", "Polo"]));
+// Array Vacio
+console.log(fillMode.fill([]));
 
 // 15. slice()
 // Este método devuelve un nuevo array con los elementos especificados de inicio a fin.
+const slicedArr = ["a", "b", "c", "d", "f", "g"];
+const sliced = slicedArr.slice(2, 3);
+console.log(sliced);
 
 // 16. reverse()
 // Este método invierte un array en su lugar. El elemento en el último índice será el primero y el elemento en el índice 0 será el último.
+let revArr = [1, 2, 3];
+console.log(revArr);
+console.log(revArr.reverse());
 
 // 17. push()
 // Este método añade uno o más elementos al final del array y devuelve la nueva longitud del mismo.
+console.log(animals2);
+console.log(animals2.push("Lemurs"));
+console.log(animals2);
 
 // 18. pop()
 // Este método elimina el último elemento del final del array y devuelve ese elemento.
+console.log(animals2.pop());
+console.log(animals2);
 
 // 19. shift()
 // Este método elimina el primer elemento al principio de una matriz y devuelve la nueva longitud de la misma.
+animals2.shift();
+console.log(animals2);
 
 // 20. unshift()
 // Este método añade uno o más elementos al principio de una matriz y devuelve la nueva longitud de la misma.
+animals2.unshift("WU TANG");
+console.log(animals2);
