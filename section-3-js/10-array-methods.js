@@ -162,5 +162,5 @@ console.log(animals2);
 
 // 20. unshift()
 // Este método añade uno o más elementos al principio de una matriz y devuelve la nueva longitud de la misma.
-animals2.unshift("WU TANG");
+animals2.unshift("WU TANGGG");
 console.log(animals2);
