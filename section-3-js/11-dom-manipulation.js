@@ -49,3 +49,44 @@ console.log(document.querySelector(".hipHop"));
 console.log(document.querySelector("h5"));
 console.log(document.querySelector("body"));
 console.log(document.querySelector("#query-selector .hipHop .myLove"));
+
+// 5.querySelectorAll() Method
+// Funciona de forma similar a la anterior, que devuelve una colección de listas de nodos con todos los elementos coincidentes.
+console.log(document.querySelectorAll(".wuTang"));
+
+// --------------------------------------------
+
+// Cómo recorrer el documento
+// A estas alturas estarás de acuerdo conmigo en que todo en un documento HTML es un nodo.
+// También el texto dentro de los elementos HTML son nodos de texto.
+
+// Con el DOM de HTML, puedes navegar por el árbol de nodos y acceder a los nodos en el árbol usando las relaciones de nodos de las que hablamos antes (padre, hijo(s), hermano(s), etc.).
+
+// Se pueden crear nuevos nodos, y todos los nodos pueden ser modificados o eliminados.
+
+// Un pequeño repaso
+// Cada nodo tiene exactamente un padre, excepto el nodo superior (que no tiene padre).
+// Un nodo puede tener más de un hijo.
+// Los hermanos son nodos con el mismo padre.
+// En esta sección, vamos a ver cómo obtener el elemento padre, los hermanos de un elemento y los hijos de un elemento. Utilizaré las siguientes propiedades de nodo para lograr estas cosas:
+
+// - parentNode
+// - childrenNodes
+// - firstElementChild
+// - lastElementChild
+// - nextElementSibling
+// - previousElementSibling
+
+// Last Element Child
+console.log(document.querySelector("#traverse-document").lastElementChild);
+
+// First Element Child
+console.log(document.querySelector("#traverse-document").firstElementChild);
+
+// Children
+console.log(document.querySelector("#traverse-document").children);
+console.log(document.querySelector("#traverse-document").children[2]);
+
+// parentNode
+console.log(document.querySelector("#second-child").parentNode);
+console.log(document.querySelector("#second-child").parentElement);
