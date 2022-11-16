@@ -40,5 +40,3 @@ console.log(createElement);
 // 1º - Crea un <p></p> dentro de un tag de tipo <div id="insert-p"></div>
 
 // 2º - Crea un <div id="nested"></div> desde código
-
-// 3º - Crea un <p></p> dentro de un <div id="nested"></div> creado desde código
