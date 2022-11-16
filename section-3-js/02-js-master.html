@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Master</title>
-
     <style>
       a {
         display: block;
@@ -14,6 +13,16 @@
       img {
         width: 200px;
         height: 200px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      #dom-manipulation img {
+        width: 70%;
+        height: 50%;
       }
     </style>
   </head>
@@ -32,6 +41,45 @@
       alt=""
     />
 
-    <script src="./10-array-methods.js"></script>
+    <section id="dom-manipulation" class="test">
+      <h1>DOM MANIPULATION</h1>
+      <img
+        src="https://www.freecodecamp.org/news/content/images/2021/01/images.png"
+        alt=""
+      />
+      <div id="examples">
+        <div id="id-example">
+          <h1 id="wutang"></h1>
+        </div>
+        <div id="classname-example">
+          <div class="wuTang">CREAM</div>
+          <div class="wuTang">A Better Tomorrow</div>
+          <div class="wuTang">Tearz</div>
+          <div class="wuTang">Protect yo neck</div>
+          <div class="wuTang">Bring Da Ruckus</div>
+          <h1 class="wuTang">Hello</h1>
+        </div>
+        <div id="tagName-example">
+          <h5>Joey Badass</h5>
+          <h5>J Cole</h5>
+          <h5>RUFUS</h5>
+          <h5 class="myLove">NAS</h5>
+        </div>
+        <div id="query-selector">
+          <div class="hipHop">
+            <h2 class="myLove">I love hip hop</h2>
+          </div>
+          <h4>Yoga is amazingly hard</h4>
+          <p id="latin">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reiciendis, itaque pariatur iure quidem officia molestiae quasi ea
+            quas excepturi. Corrupti dolore neque quam suscipit necessitatibus
+            odio ut quos sapiente id.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./11-dom-manipulation.js"></script>
   </body>
 </html>
