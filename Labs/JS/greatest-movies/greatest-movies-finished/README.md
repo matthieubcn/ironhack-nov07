@@ -6,18 +6,17 @@
 
 ## Introduction
 
-We have just learned some useful methods, that will help us manipulate **objects and arrays**. In this exercise, we will practice working with these methods, and you are required to use at least one of them in each iteration.
+We have just learned some super useful methods, that will help us a lot to manipulate **objects and arrays**. In this exercise, we will focus on practicing them, and this being said, it is mandatory to implement at least one of them in each iteration.
 
-
+Best way to practice is to work with real data. In the **`src/data.js`** file you will find an array of info about **the best 250 movies of all times** according to [IMDB Ranking](http://www.imdb.com/chart/top?ref_=nv_mv_250_6) and you have to process it to display what each iteration asks! :muscle:
 
 <br>
-
-
 
 ## Requirements
 
 - Fork this repo.
 - Clone this repo.
+- Visit the "Actions" tab in your fork, and enable workflows.
 - Practice JavaScript advanced methods (`map`, `reduce`, `filter` and `sort` to manipulate arrays).
 
 <br>
@@ -32,47 +31,13 @@ $ git commit -m "Solved lab"
 $ git push origin master
 ```
 
-- Create a Pull Request so that your TAs can check your work.
+- Create Pull Request so your TAs can check up your work.
 
 <br>
 
+## Introduction
 
-
-## Test Your Code
-
-This LAB is equipped with unit tests to provide automated feedback on your lab progress. In case you want to check the tests, they are in the `tests/movies.spec.js` file.
-
-
-
-To run the tests and your JavaScript code, open the `SpecRunner.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
-
-
-To see the outputs of the `console.log` in your JavaScript code, open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
-
-<br>
-
-
-
-
-
-
-
-## Instructions
-
-You will work on the `src/movies.js` file, which is already loaded in the `SpecRunner.html` file.
-
-The `src/data.js` file containing the array of movies is also loaded in the `SpecRunner.html` file.
-
-
-
-<br>
-
-## Iteration 0: Movies array
-
-The best way to practice is to work with real data. In the **`src/data.js`** file, you will find an array of info about **the best 250 movies of all times** according to [IMDB Ranking](http://www.imdb.com/chart/top?ref_=nv_mv_250_6) that you will use to display what each iteration asks! 
-
-Here is an example of how the data is displayed:
+The `src/data.js` contains an array of 250 movies. We are talking about the array of 250 _objects_ containing the info about each movie. Here is one example of how the data is displayed:
 
 ```javascript
 {
@@ -85,21 +50,38 @@ Here is an example of how the data is displayed:
 }
 ```
 
+In the next a couple of iterations, you will be using your JS knowledge to manipulate with this data.
 
+<br>
 
-You will be digging deeper into some "facts" that this data set has. For example, we can use this data set to find which is the most popular movie, what is the average duration of the movie, the list of movies by some director, etc. 
+## Tests!
 
-In this iteration, no action is required, but here comes your challenge: In the following iterations, you will use your JS knowledge to manipulate this data.
+Ohh yes! We have our beloved tests, and you already know how this works. Open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Next, run the tests by running the command `npm run test:watch`. In summary, the steps are:
 
+```shell
+$ cd lab-javascript-greatest-movies
+$ npm install
+$ npm run test:watch
+```
 
+And last, open the generated `lab-solution.html` file with the "Live Server" VSCode extension to see test results.
 
-Remember to read each iteration description carefully before working on the solution.
+Remember to focus on one test at a time and read carefully the instructions to understand what you have to do. The tests can be found in the `tests/movies.spec.js` file.
+
+<br>
+
+## Instructions
+
+You will be digging deeper into some "facts" that this set of data has in it. We see all this raw data, but that doesn't tell us a lot. For example, if we want to see which is the most popular movie, what is the average duration of the movie, list of movies by some director, etc. we wouldn't find the answers just by observing this array.
+Well, there comes your challenge. Read each iteration description carefully and let's start working on the solutions.
+
+You have to work on the `src/movies.js` file.
 
 <br>
 
 ### Iteration 1: All directors
 
-We need to get the array of all directors. Since this is a warm up, we will give you a hint: you have to _map_ through the array of movies and get all the directors into one array as a final result. Go ahead and create a function named `getAllDirectors()` that receives an array of movies as an argument and returns a new (_mapped_) array.
+We need to get the array of all directors. Since this is a warm up, we will give you a hint: you have to _map_ through the array of movies and get all the directors into one array as a final result. Go ahead and create a function named `getAllDirectors()` that receives an array of movies as an argument and returns a new (_mapped_ array).
 
 <br>
 
@@ -146,9 +128,7 @@ Create a function `orderByYear()` that receives an array as parameter and return
 
 If two movies have the same year, order them in alphabetical order by their title! :heavy_check_mark:
 
-
-
-:warning: **Important:** Your function should *return a new array*, containing the movies ordered by the year. Your function should not modify (mutate) the original array. You may need to do some research on how to make a "copy" or "clone" an array.
+**:bulb: Make sure not to mutate the original array :wink:**
 
 <br>
 
@@ -158,15 +138,7 @@ Another popular way to order the movies is to sort them alphabetically using the
 
 Create a `orderAlphabetically()` function, that receives an array and returns an array of first 20 titles, alphabetically ordered. Return only the title of each movie, and if the array you receive has less than 20 movies, return all of them.
 
-
-
-:warning: **Important:** Your function should *return a new array*, containing movie objects sorted alphabetically. Your function should not modify (mutate) the original array. You may need to do some research on how to make a "copy" or "clone" an array.
-
-
-
 <br>
-
-
 
 ### BONUS - Iteration 7: Time format
 
@@ -191,16 +163,16 @@ Should be:
 
 ```javascript
 {
-  "title": "The Shawshank Redemption",
-  "year": 1994,
-  "director": "Frank Darabont",
-  "duration": 142,
-  "genre": ["Crime","Drama"],
-  "score": 9.3
+  "title":"The Shawshank Redemption",
+  "year":1994,
+  "director":"Frank Darabont",
+  "duration":142,
+  "genre":["Crime","Drama"],
+  "score":9.3
 }
 ```
 
-:warning: **Important:** Your function should *return a new array*, containing movie objects with the duration time in minutes. Your function should not modify (mutate) the original array.
+**Keep in mind**, you have to return a new array with all the info about movies, meaning, you shouldn't modify the original array.
 
 <br>
 
@@ -216,8 +188,6 @@ Create `bestYearAvg()` function that receives an array of movies and gives us an
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_dfc3fe557576abca4dba274e3aabe9a3.gif)
 
-
-
 <br>
 
-**Happy coding!** :blue_heart:
+**Happy coding!** :heart:
