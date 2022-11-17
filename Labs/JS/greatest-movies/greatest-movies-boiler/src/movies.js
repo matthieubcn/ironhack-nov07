@@ -1,7 +1,30 @@
+import { movies } from "./data.js";
+console.log(movies);
+
+// COMANDO DE NODE PARA VER RESULTADOS:
+// node movies.js
+
+//Iteracion 1
+// funcion tipo flecha que aceptara un parametro
+// porque el param va a ser el array de datos que queremos apuntar.
+const getAllDirectors = (moviesArray) => {
+  // Usamos el paramatero para iterar y crear un nuevo copia del array en base al metodo map y segmentamos por algo especifico dentro del map mediante una expresion que se encarga de llamar al director.
+  const rawList = moviesArray.map((movie) => movie.director);
+  // usamos la variable de arriba en conjunto con el metodo filter que le pasamos 2 parametros, uno para apuntar al nombre del director y el segundo es el numero de# del director en el array y comparamos en base a la primera instancia que aparece el nombre del director con las otras veces que aparece para poder filtrar
+  const cleanList = rawList.filter(
+    (director, numeroDePocisionDirectorEnElArray) =>
+      rawList.indexOf(director) === numeroDePocisionDirectorEnElArray
+  );
+  // returnamos la variable que queremos usar :)
+  return cleanList;
+};
+console.log("1. Clean list:");
+console.table(getAllDirectors(movies));
+
 // Iteration 1: All directors? - Get the array of all directors.
 // _Bonus_: It seems some of the directors had directed multiple movies so they will pop up multiple times in the array of directors.
 // How could you "clean" a bit this array and make it unified (without duplicates)?
-function getAllDirectors(moviesArray) {}
+// function getAllDirectors(moviesArray) {}
 
 // Iteration 2: Steven Spielberg. The best? - How many drama movies did STEVEN SPIELBERG direct?
 function howManyMovies(moviesArray) {}
