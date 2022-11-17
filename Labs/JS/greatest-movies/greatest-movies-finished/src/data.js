@@ -2002,6 +2002,8 @@ const movies = [
   }
 ];
 
+const sports = [];
+
 if (typeof module !== 'undefined') {
   module.exports = movies;
 }
