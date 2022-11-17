@@ -12,8 +12,7 @@ const getAllDirectors = (moviesArray) => {
   const rawList = moviesArray.map((movie) => movie.director);
   // usamos la variable de arriba en conjunto con el metodo filter que le pasamos 2 parametros, uno para apuntar al nombre del director y el segundo es el numero de# del director en el array y comparamos en base a la primera instancia que aparece el nombre del director con las otras veces que aparece para poder filtrar
   const cleanList = rawList.filter(
-    (director, numeroDePocisionDirectorEnElArray) =>
-      rawList.indexOf(director) === numeroDePocisionDirectorEnElArray
+    (director, index) => rawList.indexOf(director) === index
   );
   // returnamos la variable que queremos usar :)
   return cleanList;
