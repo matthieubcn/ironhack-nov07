@@ -69,6 +69,8 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Dom Manipulation #1](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/11-dom-manipulation.js)
   - [Dom Manipulation #2](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/12-dom-manipulation-2.js)
   - [Dom Manipulation #3 - HTML](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/12-dom.html)
+  - [Browser Events](https://github.com/dzc1/class-internal/blob/main/Section-03-JS/13-browser-events.html)
+  - [Event Excercises](https://github.com/dzc1/class-internal/blob/main/Section-03-JS/13-events-exercises.html)
 
 ## Links de Ayuda
 
