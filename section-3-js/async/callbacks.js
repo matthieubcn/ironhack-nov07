@@ -1,6 +1,5 @@
 // Usando Callbacks
 // 3 possible outcomes ["Sunny", "Rainy", "Unexpected Error"];
-
 const fatherWillDecide = (weather) => {
   console.log(`Father Says that!`);
   if (weather === "Sunny") {
@@ -22,9 +21,7 @@ const sonChecksWeather = () => {
     const randomNumber = Math.floor(Math.random() * 2);
     const result = possibleOutcome[randomNumber];
     console.log(`The weather is ${result}`);
-
     fatherWillDecide(result);
-  }, 2000);
+  }, 1000);
 };
-
 sonChecksWeather();
