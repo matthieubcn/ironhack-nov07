@@ -105,7 +105,6 @@ obtainInstruction("steak", 0)
     document.querySelector("#steak").innerHTML += `<li>${paso}</li>`;
     document.querySelector("#steak").innerHTML += `<li>Stake is ready!</li>`;
     document.querySelector("#steakImg").removeAttribute("hidden");
-    return obtainInstruction("steak", 8);
   });
 
 // Iteration 3 using async/await
