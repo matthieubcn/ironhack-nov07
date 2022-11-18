@@ -70,8 +70,8 @@ getInstruction(
   },
   (error) => console.log(error)
 );
-// FUCK CALLBACKS!
-// Iteration 2 - using promises
+
+//Iteration 2 - using promises
 obtainInstruction("steak", 0)
   .then((paso) => {
     document.querySelector("#steak").innerHTML += `<li>${paso}</li>`;
@@ -103,14 +103,9 @@ obtainInstruction("steak", 0)
   })
   .then((paso) => {
     document.querySelector("#steak").innerHTML += `<li>${paso}</li>`;
-    return obtainInstruction("steak", 8);
-  })
-  .then(() => {
     document.querySelector("#steak").innerHTML += `<li>Stake is ready!</li>`;
     document.querySelector("#steakImg").removeAttribute("hidden");
-  })
-  .catch((error) => {
-    console.log(error);
+    return obtainInstruction("steak", 8);
   });
 
 // Iteration 3 using async/await
