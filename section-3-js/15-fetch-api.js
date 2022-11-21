@@ -55,7 +55,6 @@
 // ---------
 // JSON.parse() === toma una cadena json y la convierte en un objeto javascript
 // --------
-// JSON.stringify() == convierte un objeto de javascript en una cadena JSON (util para enviar info por la red).
 
 // --------
 // --------
