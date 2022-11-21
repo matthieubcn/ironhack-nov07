@@ -1,7 +1,3 @@
-//document.querySelector("#getText").addEventListener("click", getText);
-// document.querySelector("#getJson").addEventListener("click", getText);
-// document.querySelector("#getHere").addEventListener("click", getText);
-
 // -------
 // -------
 // -------
@@ -89,3 +85,30 @@ const getExternalAPiInfo = () => {
 document
   .querySelector("#getExternalAPiInfo")
   .addEventListener("click", getExternalAPiInfo);
+
+/// Enviar un mensaje al endPoint de jsonPlaceholder para poder emitir info dentro del request!
+// HTTP Status Messages Segment - [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status]
+const addPost = (preventForm) => {
+  preventForm.preventDefault();
+  // nos traemos los values/valores de los inputs
+  let title = document.querySelector("#title").value;
+  let body = document.querySelector("#body").value;
+  // Vamos a usar el fetch() para poder enviar info a el endpoint!
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    // Tipo de request que queremos ejecutar, en este caso es un POST request!
+    method: "POST",
+    // Los headers son metadatos adicionales pasados a la API para ayudar al servidor a entender qué tipo de solicitud está tratando, por ejemplo "content-type".
+    headers: {
+      // content-type es el tipo de contenido que acepta este request
+      "Content-type": "application/json",
+      // Accept, tenemos la posibilidad de expandir el tipo de dato que se le pasa a este request!
+      Accept: "text/plain, application/json",
+    },
+    // El body se encarga de enviar la data que nosotros queremos enviar, ahora recuerdense que como estamos trabajando con formatos JSON prod efecto tenemos que enviar la respuesta como JSON, por ende usamos el JSON.stringify(!)
+    body: JSON.stringify({ title: title, body: body }),
+  })
+    .then((response) => response.json())
+    .then((formData) => console.log(formData))
+    .catch((error) => console.log(error));
+};
+document.querySelector("#addPost").addEventListener("submit", addPost);
