@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "email": "rick@rickandmorty.com"
+  },
+  {
+    "id": 2,
+    "name": "Morty Smith",
+    "email": "morty@rickandmorty.com"
+  },
+  {
+    "id": 3,
+    "name": "Bird Person",
+    "email": "birdperson@rickandmorty.com"
+  },
+  {
+    "id": 5,
+    "name": "Elon Tusk",
+    "email": "elontusk@rickandmorty.com"
+  }
+]

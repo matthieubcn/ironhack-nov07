@@ -1,0 +1,41 @@
+Fetch Api
+
+The Fetch API is a modern interface that allows us to make HTTP requests to servers from web browsers. In addition, the Fetch API is much simpler and cleaner. It uses the Promise modern ES6 approach to deliver more flexible features to make requests to servers from the web browsers, 
+
+API
+Application Programming Interface(API) is a software interface that allows two applications to interact with each other without any user intervention. API is a collection of software functions and procedures. In simple terms, API means a software code that can be accessed or executed. API is defined as a code that helps two different software's to communcate and exchange date with each other. 
+
+A simple analogy 
+LEts go to a restaurant and order some food :) 
+
+You = customer = user 
+Menu = front end -  what you see 
+Waiter = THE API, knows specific instructions, but does not know how to cook the food. 
+Kitchen = back end =  where the food is prepared
+
+- You look at the menu and tell the waiter what do you want to order from the menu 
+- Waiter brings the order to Kitchen to be prepared, then brings back the food to your table. 
+
+In this case the waiter is the API acting as a middleman between the the user(frontEnd) & kitchen(backEnd)
+
+[REST]full APIS 
+
+REST is an acronomy for 
+Representational 
+State 
+Transfer
+
+This type of API provides a way for accessing web services in a simple and flexible way without having any proccessing. IT communicates through HTTP requests to perform CRUD operations in a resource. 
+CRUD 
+Create 
+Read
+Update 
+Delete 
+
+
+How do these REST API Works? 
+When a client request is made via a RESTFULL API, it transfers a representation of the state of the resource to the request or endpoint. 
+
+This, information or representation is delivered in one of several formats via HTTP. They are: 
+JSON (Javascript Object Notation), HTML, XLT, PHP, Python or plain text. JSON is the most popular file format to use because despite its name, it's language-agnostic, as well as readable by both humans and machines. 
+
