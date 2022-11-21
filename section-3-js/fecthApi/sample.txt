@@ -1,3 +1,5 @@
+WU TANG
+
 Fetch Api
 
 The Fetch API is a modern interface that allows us to make HTTP requests to servers from web browsers. In addition, the Fetch API is much simpler and cleaner. It uses the Promise modern ES6 approach to deliver more flexible features to make requests to servers from the web browsers, 
