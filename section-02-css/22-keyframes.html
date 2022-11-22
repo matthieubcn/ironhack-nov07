@@ -13,6 +13,7 @@
 
       /* Cada animación necesita ser definida con la regla @keyframes que luego es llamada con la propiedad animation, así: */
       /* -SYNTAX- */
+
       /* .element {
         animation: pulse 5s infinite;
       }
@@ -29,7 +30,9 @@
           background-color: #ff4136;
         }
       } */
-      /* Cada regla @keyframes define lo que debe suceder en momentos específicos durante la animación. Por ejemplo, 0% es el comienzo de la animación y 100% es el final. Estos keyframes clave pueden ser controlados por la propiedad de animación abreviada, o sus 8 subpropiedades, para dar más control sobre cómo deben ser manipulados esos keyframes clave. */
+      /* Cada regla @keyframes define lo que debe suceder en momentos específicos durante la animación. Por ejemplo, 0% es el comienzo de la animación y 100% es el final. 
+      
+      Estos keyframes clave pueden ser controlados por la propiedad de animación abreviada, o sus 8 subpropiedades, para dar más control sobre cómo deben ser manipulados esos keyframes clave. */
 
       /* SUBPROPIEDADES */
       /* animation-name: declara el nombre de la regla @keyframes a manipular.
@@ -62,9 +65,131 @@
 
       /* lista de propiedades que se pueden animar:
       https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties */
+      body {
+        background: #333;
+      }
+
+      .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* Animation Properties */
+        animation-name: animate1;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+      }
+
+      .box2 {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* Animation Shorthand */
+        animation: animate2 2s ease-in-out forwards alternate running infinite
+          1s;
+      }
+
+      .box3 {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* Animation Shorthand */
+        animation: animate2 5s ease-in-out forwards alternate running infinite
+          1s;
+      }
+
+      /* -------- */
+      /* Animation 1 */
+      /* -------- */
+      @keyframes animate1 {
+        from {
+          top: 0;
+        }
+        to {
+          top: 200px;
+          background: red;
+          width: 600px;
+        }
+      }
+
+      /* -------- */
+      /* Animation 2 */
+      /* -------- */
+      @keyframes animate2 {
+        0% {
+          left: 0px;
+          top: 0px;
+          background: white;
+          border-radius: 0 0 0 0;
+        }
+        25% {
+          left: 300px;
+          top: 0px;
+          background: red;
+          border-radius: 50% 0 0 0;
+        }
+        50% {
+          left: 300px;
+          top: 300px;
+          background: green;
+          border-radius: 50% 50% 0 0;
+        }
+        75% {
+          left: 0px;
+          top: 300px;
+          background: blue;
+          border-radius: 50% 50% 50% 0;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+          background: gray;
+          border-radius: 50% 50% 50% 50%;
+        }
+      }
+
+      /* -------- */
+      /* Animation 2 */
+      /* -------- */
+      @keyframes animate3 {
+        0%,
+        100% {
+          left: 0px;
+          top: 0px;
+          background: white;
+          border-radius: 0 0 0 0;
+        }
+        25% {
+          left: 300px;
+          top: 0px;
+          background: red;
+          border-radius: 50% 0 0 0;
+        }
+        50% {
+          left: 300px;
+          top: 300px;
+          background: green;
+          border-radius: 50% 50% 0 0;
+        }
+        75% {
+          left: 0px;
+          top: 300px;
+          background: blue;
+          border-radius: 50% 50% 50% 0;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="box"></div>
+    <!-- <div class="box"></div> -->
+    <!-- <div class="box2"></div> -->
+    <div class="box3"></div>
   </body>
 </html>

@@ -7,7 +7,7 @@
     <title>CSS Variables</title>
     <style>
       /* USING THE TRADITIONAL EXAMPLE */
-      #example {
+      /* #example {
         background-color: #1e90ff;
         outline: 1px #1e90ff solid;
       }
@@ -27,6 +27,41 @@
         color: #1e90ff;
         border: 1px solid #1e90ff;
         padding: 1.5rem;
+      } */
+
+      /* USING Variable EXAMPLE */
+      :root {
+        --blue: #1e90ff;
+        --btn--padding: 1.5rem;
+      }
+
+      #example {
+        background-color: var(--blue);
+        outline: 1px var(--blue) solid;
+      }
+
+      /* h2 {
+        border-bottom: 2px solid var(--blue);
+      } */
+
+      /* SHOWCASE de una variable local */
+      h2 {
+        --black: black;
+        border-bottom: 2px solid var(--black);
+        color: var(--black);
+      }
+
+      .container {
+        color: var(--blue);
+        background-color: #ffffff;
+        padding: 15px;
+      }
+
+      button {
+        background-color: #ffffff;
+        color: var(--blue);
+        border: 1px solid var(--blue);
+        padding: var(--btn--padding);
       }
     </style>
   </head>
