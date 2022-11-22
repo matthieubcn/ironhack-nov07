@@ -71,6 +71,8 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Dom Manipulation #3 - HTML](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/12-dom.html)
   - [Browser Events](https://github.com/dzc1/class-internal/blob/main/Section-03-JS/13-browser-events.html)
   - [Event Excercises](https://github.com/dzc1/class-internal/blob/main/Section-03-JS/13-events-exercises.html)
+  - [Async](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/14-async-class.js)
+  - [Fetch Api](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/15-fetch-api.js)
 
 ## Links de Ayuda
 
