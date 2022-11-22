@@ -30,8 +30,9 @@ document.querySelector("#getText").addEventListener("click", getText);
 const getJson = () => {
   // Part 1 - Clara J - Llamamos al recurso
   fetch("users.json")
-    // Part 2 - Xavi - recibimo s info del recurso y manipluamos/limpiams segun el tipo de recurso.
+    // Part 2 - pasamos una promesa y recibimos la info del recurso y manipluamos/limpiams segun el tipo de recurso.
     .then((response) => response.json())
+    // Part 3 - pasamos una promesa y procedemos a crear una expresion dentro de la promesa pra referenciar la info paramterizada con el metodo anterior para poder iterar sobre cada uno de los "usuarios", dentro de la promesa nos declaramos una variable por defecto vacia y iteramos con n bucle forEach dentro de la promesa para iterar encima de cada uno de los objetos que recibimos del array de objetos que recibe el JSON "users". Dentro del bucle mediante notacion de punto. dot.Notation, aprovechamos que tenemos accesso a los keys dentro del objeto mediante la declaracion del parametro "user" y aprovechamos para sacar la info que necesitamos. Aprovehcamos que tenemos una variable vacia para guardar los datos de cada usuario dentro de la misma mediante los `` de los template literals.
     .then((users) => {
       let userData = "";
       users.forEach((user) => {
@@ -43,10 +44,13 @@ const getJson = () => {
                 </ul>
                 `;
       });
+      // part 4 - le asignamos el valor de userData al dom element de #output que es un id
       document.querySelector("#output").innerHTML += userData;
     })
+    // part 5 - pasamos una promesa de rechazo por si rebimos algun error.
     .catch((error) => console.log(error));
 };
+// part 6 - Apuntamos mediante un dom querySelector y le asignamos un event listener addEventListener() para pasarle la funcion que nos creamos arriba.
 document.querySelector("#getJson").addEventListener("click", getJson);
 
 // -------
@@ -54,11 +58,13 @@ document.querySelector("#getJson").addEventListener("click", getJson);
 // -------
 // -------
 // -------
-// Llamar a una API externa xiquets?
-
+// Llamar a una API externa!
 const getExternalAPiInfo = () => {
+  // Part 1 - Llamamos al recurso
   fetch("https://jsonplaceholder.typicode.com/posts")
+    // Part 2 - pasamos una promesa y recibimos la info del recurso y manipluamos/limpiams segun el tipo de recurso.
     .then((response) => response.json())
+    // Part 3 - pasamos una promesa y procedemos a crear una expresion dentro de la promesa pra referenciar la info parametrizada con el metodo anterior para poder iterar sobre cada uno de los "posts", dentro de la promesa nos declaramos una variable por defecto vacia y iteramos con n bucle forEach dentro de la promesa para iterar encima de cada uno de los objetos que recibimos del array de objetos que recibe el external api de "posts". Dentro del bucle mediante notacion de punto. dot.Notation, aprovechamos que tenemos accesso a los keys dentro del objeto mediante la declaracion del parametro "post" y aprovechamos para sacar la info que necesitamos. Aprovehcamos que tenemos una variable vacia para guardar los datos de cada usuario dentro de la misma mediante los `` de los template literals.
     .then((res) => {
       let externalApiInfo = "";
       res.forEach((post) => {
@@ -78,14 +84,23 @@ const getExternalAPiInfo = () => {
               </div>
               `;
       });
+      // part 4 - le asignamos el valor de userData al dom element de #output que es un id
+
       document.querySelector("#output").innerHTML += externalApiInfo;
     })
+    // part 5 - pasamos una promesa de rechazo por si rebimos algun error.
     .catch((error) => console.log(error));
 };
+// part 6 - Apuntamos mediante un dom querySelector y le asignamos un event listener addEventListener() para pasarle la funcion que nos creamos arriba.
 document
   .querySelector("#getExternalAPiInfo")
   .addEventListener("click", getExternalAPiInfo);
 
+// -------
+// -------
+// -------
+// -------
+// -------
 /// Enviar un mensaje al endPoint de jsonPlaceholder para poder emitir info dentro del request!
 // HTTP Status Messages Segment - [https://developer.mozilla.org/en-US/docs/Web/HTTP/Status]
 const addPost = (preventForm) => {
