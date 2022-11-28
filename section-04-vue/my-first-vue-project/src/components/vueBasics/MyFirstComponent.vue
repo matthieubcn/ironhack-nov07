@@ -60,6 +60,7 @@ const counter = reactive({
 
 const increaseCounter = () => {
   diego++;
+  console.log("Wu tang clan");
 };
 const decreaseCounter = () => {
   diego--;
