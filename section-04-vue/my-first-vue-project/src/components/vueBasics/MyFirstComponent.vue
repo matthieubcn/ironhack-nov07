@@ -1,21 +1,26 @@
 <!-- Aca adentro es donde colocaremos nuestro HTML -->
 <template>
-  <p>Mi nombre es Diego y me gusta mucho programar</p>
-
   <!-- Usando text interpolation aka syntax de bigotes! -->
-  <h1>{{ diego }}</h1>
   <h1>
     Naci en {{ cityOfBirth }}, {{ truthyValue }} venezuela y tengo
     {{ age }} años. {{ nullValue }}
   </h1>
   <h1>{{ myInfo.age }} {{ myInfo.countryOfBirth }} Hola Santi</h1>
-  <h1>{{ myInfo.countryOfBirth }}</h1>
 
+  <h1>{{ 2 + 2 }}</h1>
+
+  <!-- EJEMPLO DE REACTIVIDAD  -->
   <div>
     <button @click="decreaseCounter">-</button>
     <h1>{{ diego }}</h1>
     <button @click="increaseCounter">+</button>
   </div>
+  <!-- Ejercicio #1 -->
+  <div></div>
+
+  <!-- EJMPLO DE INYECCION DE COMPONENTES DENTRO DE COMPONENTES -->
+  <!-- <HtmlDirective />
+  <TextDirective /> -->
 </template>
 
 <!-- Aca adentro es donde colocaremos nuestro JS -->
@@ -27,6 +32,8 @@
 // Pasos:
 // Primero nos tenemos que importar estos metodos desde la libreria de vue :)
 import { ref, reactive } from "vue";
+import TextDirective from "./2-TextDirective.vue";
+import HtmlDirective from "./3-HtmlDirective.vue";
 
 // Vamos a decalrar variables que contengan el metodo dentro para poder trabajar correctamente datos que sean reactivos:)
 
@@ -57,6 +64,17 @@ const increaseCounter = () => {
 const decreaseCounter = () => {
   diego--;
 };
+
+// EJERCICIO
+const myInfo2 = reactive({
+  name: "Diego Zito",
+  age: 31,
+  dob: "May 16, 1991",
+  hobbies: ["Programming", "Surfing", "Snowboarding", "Cooking", "Guitar"],
+});
+const favMovie = ref("Gangs of New York");
+const favFood = ref("Mexican Food");
+const timesWathed = ref(32);
 </script>
 
 <!-- Aca adentro es donde colocaremos nuestro CSS -->

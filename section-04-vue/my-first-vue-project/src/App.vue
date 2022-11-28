@@ -1,17 +1,23 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
 import MyFirstComponentVue from "./components/vueBasics/MyFirstComponent.vue";
+import TextDirective from "./components/vueBasics/2-TextDirective.vue";
+import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="My name is Diego Zito" />
+      <HelloWorld msg="Vue Basics Class" />
     </div>
   </header>
 
   <main>
-    <MyFirstComponentVue />
+    <!-- <MyFirstComponentVue /> -->
+    <hr />
+    <TextDirective />
+    <hr />
+    <HtmlDirective />
   </main>
 </template>
 
