@@ -3,6 +3,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import MyFirstComponentVue from "./components/vueBasics/MyFirstComponent.vue";
 import TextDirective from "./components/vueBasics/2-TextDirective.vue";
 import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
+import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
 </script>
 
 <template>
@@ -14,10 +15,12 @@ import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
 
   <main>
     <!-- <MyFirstComponentVue /> -->
+    <!-- <hr /> -->
+    <!-- <TextDirective /> -->
+    <!-- <hr /> -->
+    <!-- <HtmlDirective /> -->
     <hr />
-    <TextDirective />
-    <hr />
-    <HtmlDirective />
+    <AttributeBinding />
   </main>
 </template>
 
