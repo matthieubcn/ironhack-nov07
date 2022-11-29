@@ -71,7 +71,41 @@
       </template>
     </div>
   </div>
-  <div id="class-excercises"></div>
+  <div id="class-excercises">
+    <div id="ex-01">
+      <h3>Favorite Movies</h3>
+      <ol>
+        <li v-for="(movie, index) in myFavoriteMovies">
+          {{ index + 1 }} - {{ movie }}
+        </li>
+      </ol>
+    </div>
+    <div id="ex-02">
+      <ul v-for="(info, index) in userInfo" :key="index">
+        <li>{{ index }}: {{ info }}</li>
+      </ul>
+    </div>
+    <div id="ex-03">
+      <ul>
+        <li v-for="(compi, indax) in students" :key="indax">
+          <div v-if="compi.age >= 18">
+            <p>I can go for drinks with {{ compi.name }} after class!</p>
+          </div>
+          <div v-else>
+            <p>
+              {{ compi.name }} is still too young, they'll have to go home
+              tonight
+            </p>
+          </div>
+          <ul>
+            <li v-for="lenguaje in compi.favoriteLanguages">
+              {{ lenguaje }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -136,14 +170,45 @@ const hipHopArtists = reactive([
 // .....
 // .....
 // Ejercicios Iterating Elements
-
 // Creamos la estructura básica de un componente de vue en la que vamos a mostrar el resultado de los ejercicios. Recordad importar el componente donde sea necesario para poder ver el avance de vuestros ejercicios.
 
 // Ej.1: Creamos una variable reactiva que contenga un array con vuestras cinco películas preferidas. En el template pondremos un título de My favorite Movies y después una <ol>. Dentro de la ordered list recorreremos el array de películas y crearemos un <li> para cada una que nos las printee en pantalla. A cada <li> le daremos el index del elemento en el array como key.
 
+const myFavoriteMovies = reactive([
+  "Interstellar",
+  "Animales Fantasticos",
+  "The Butterfly Effect",
+  "How to train your dragon",
+  "Soul",
+]);
+
 // Ej.2:  Creamos una variable reactiva que contenga un objeto con cinco keys: favoriteFood, favoriteDrink, favoriteSport, favoriteCountry y favoriteArrayMethod. En el template vamos a recorrer el objeto para mostrar cada key y su valor en una unoredered list (en pantalla deberíamos ver algo como "favoriteFood: Sushi").
+const userInfo = reactive({
+  favoritefood: "Pad Thai",
+  favoriteDrink: "Beer",
+  favoriteSport: "Ping Pong",
+  favoriteCountry: "Japan",
+  favoriteArrayMethod: "sort()",
+});
 
 // Ej.3***: Creamos una variable reactiva students que contenga un array con al menos tres objetos. Cada objeto representará uno de vuestros compañeros y tendrá las keys name (string), age(number) y favoriteLanguages(array de strings). Tendremos que recorrer el array en el template y para cada objeto printear el nombre de vuestro compañero. Según si su edad es mayor o menor a 18 printearemos "I can go for a few drinks with NAME after class" o "NAME is still too young, they'll have to go home tonight". Finalmente, loopeamos el array de sus lenguajes de programación favoritos dentro de una unordered list.
+const students = reactive([
+  {
+    name: "Sussy",
+    age: 20,
+    favoriteLanguages: ["Catalan", "Gallego"],
+  },
+  {
+    name: "Matt",
+    age: 25,
+    favoriteLanguages: ["Euskera", "English"],
+  },
+  {
+    name: "Jake",
+    age: 33,
+    favoriteLanguages: ["Mallorquin", "German"],
+  },
+]);
 </script>
 
 <style scoped>
