@@ -5,6 +5,7 @@ import TextDirective from "./components/vueBasics/2-TextDirective.vue";
 import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
 import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
 import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
+import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
 </script>
 
 <template>
@@ -22,8 +23,10 @@ import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.
     <!-- <HtmlDirective /> -->
     <!-- <hr />
     <AttributeBinding /> -->
+    <!-- <hr />
+    <ConditionalRendering /> -->
     <hr />
-    <ConditionalRendering />
+    <IteratingElements />
   </main>
 </template>
 
