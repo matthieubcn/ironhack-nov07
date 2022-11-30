@@ -193,3 +193,8 @@ Para poder crear un projecto desde tu terminal solo tienes que seguir estos paso
 ```bash
 npm init vue@latest
 ```
+
+Sigue los pasos de este gif para que puedas instalar un proyecto sencillo de la ultima version de Vue que trabaja en conjunto con Vite. Una libreria de ayuda al framework.
+
+Ver el video
+<img src="./assets/imgs/gifs/vue-latest-cli.gif" alt="Vue CLI">
