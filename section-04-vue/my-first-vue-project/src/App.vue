@@ -14,7 +14,6 @@ import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
       <HelloWorld msg="Vue Basics Class" />
     </div>
   </header>
-
   <main>
     <!-- <MyFirstComponent /> -->
     <!-- <hr /> -->
