@@ -1,17 +1,17 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
-import MyFirstComponent from "./components/vueBasics/0-MyFirstComponent.vue";
-import TextDirective from "./components/vueBasics/2-TextDirective.vue";
-import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
-import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
-import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
-import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
+// import MyFirstComponent from "./components/vueBasics/0-MyFirstComponent.vue";
+// import TextDirective from "./components/vueBasics/2-TextDirective.vue";
+// import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
+// import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
+// import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
+// import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Vue Basics Class" />
+      <HelloWorld alexis="Wu Tang Clan" />
     </div>
   </header>
   <main>
@@ -24,8 +24,8 @@ import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
     <AttributeBinding /> -->
     <!-- <hr />
     <ConditionalRendering /> -->
-    <hr />
-    <IteratingElements />
+    <!-- <hr />
+    <IteratingElements /> -->
   </main>
 </template>
 
