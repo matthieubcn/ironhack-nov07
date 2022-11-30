@@ -19,12 +19,7 @@ import MyBio from "./components/Mybio.vue";
   </header>
 
   <main>
-    <MyBio
-      name="Jarko"
-      age="32"
-      birthPlace="Malaga, España"
-      currentLocation="Malaga, Ehhpaña"
-    />
+    <MyBio name="Aleix Abuli" />
   </main>
 </template>
 
