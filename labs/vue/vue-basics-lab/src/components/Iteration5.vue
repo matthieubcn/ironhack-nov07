@@ -49,15 +49,15 @@ const getRandomColor = () => {
   const hexLetters = "0123456789ABCDEF";
   // parte 2 - definir el valor del # dentro de una variable tipo string
   let color = "#";
-  // part 3  - bucle y """""""""" FILL OUT AFTER EXLPANATION
+  // part 3  - bucle y limitamos a 6 caracteres que le asignamos a una variable llamada "color" que definimos inicialmente dentro de la linea 51. Esta variable le asignamos con un operador += la variable con nombre hexLetters que contiene una operacion matematica que multiplica el valor total de la variable hexLetters (total=15 caracteres) y utitliza el metodo random para aignaler un numero aleatorio; a esta multiplicacion se le asigna otro metodo que es el math.floor que rendondea el resultado y elimina sus decimales.
   for (let i = 0; i < 6; i++) {
-    console.log(hexLetters[Math.random() * 16]);
+    // console.log(hexLetters[Math.random() * 16]);
     color += hexLetters[Math.floor(Math.random() * 16)];
   }
   // parte 4 - retornamos el valor de la variable "color"!
-  console.log(color);
-  console.log(Math.random());
-  console.log(Math.floor(45.566938373));
+  //   console.log(color);
+  //   console.log(Math.random());
+  //   console.log(Math.floor(45.566938373));
   return color;
 };
 </script>
