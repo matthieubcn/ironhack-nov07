@@ -79,6 +79,18 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Event Excercises](https://github.com/dzc1/class-internal/blob/main/Section-03-JS/13-events-exercises.html)
   - [Async](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/14-async-class.js)
   - [Fetch Api](https://github.com/dzc1/ironhack-nov07/blob/main/section-3-js/15-fetch-api.js)
+- [Vue JS](https://github.com/dzc1/ironhack-nov07/tree/main/section-04-vue/my-first-vue-project)
+  - [App.vue File - Point of entry](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/App.vue)
+  - [Main.js File - "Brain" of the project](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/main.js)
+  - [Boiler Plate Component - Composition API](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/TemplateComponent.vue)
+  - [My First Vue Component](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/0-MyFirstComponent.vue)
+  - [Text Interpolation](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/1-TextInterpolation.vue)
+  - [Text Directives](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/2-TextDirective.vue)
+  - [Html Directives](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/3-HtmlDirective.vue)
+  - [Attribute Binding v-bind directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/4-attribute-binding.vue)
+  - [Conditional Rendering v-if v-else-if v-else directives and v-show directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/5-ConditionalRendering.vue)
+  - [Iterating Through Elements - v-for directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/6-IteratingElements.vue)
+  - []()
 
 ## Links de Ayuda
 
