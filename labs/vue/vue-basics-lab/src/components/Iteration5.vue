@@ -66,10 +66,6 @@ const getRandomColor = () => {
 section {
   padding: 3rem 0;
 }
-
-div {
-  padding: 1rem 0;
-}
 .container {
   height: 6rem;
   padding: 1rem 0;
