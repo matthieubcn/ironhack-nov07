@@ -183,3 +183,13 @@ Hacer un `pull` de los ultimos cambios de un repositorio git en gitHub a tu repo
 ```bash
 git pull origin "nombre del branch/rama que estaremos apuntando"
 ```
+
+### VUE Project Installation
+
+#### VUE CLI
+
+Para poder crear un projecto desde tu terminal solo tienes que seguir estos pasos:
+
+```bash
+npm init vue@latest
+```
