@@ -90,7 +90,7 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Attribute Binding v-bind directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/4-attribute-binding.vue)
   - [Conditional Rendering v-if v-else-if v-else directives and v-show directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/5-ConditionalRendering.vue)
   - [Iterating Through Elements - v-for directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/6-IteratingElements.vue)
-  - []()
+  <!-- - []() -->
 
 ## Links de Ayuda
 
