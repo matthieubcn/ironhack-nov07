@@ -32,7 +32,7 @@ import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
     <!-- <hr />
     <Methods /> -->
     <!-- <hr />-->
-    <ComputedProperties />
+    <!-- <ComputedProperties /> -->
     <!-- <hr /> -->
     <TwoWayDataBinding />
   </main>
