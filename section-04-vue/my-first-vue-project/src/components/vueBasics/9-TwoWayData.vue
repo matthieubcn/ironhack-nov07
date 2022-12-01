@@ -180,6 +180,22 @@ const formValues = reactive({
   profileAge: null,
 });
 
+const submitForm = () => {
+  //   console.log("Form Values", formValues);
+  alert(`
+        !!SUCCESS!!
+        We succesfully received your job application form. We will get in contact with you in up to 7 days. Thanks for applying to...
+        Name: ${formValues.formName}
+        Profile Summary: ${formValues.profileSummary}
+        Country: ${formValues.country}
+        Job Location: ${formValues.jobLocation}
+        Willing to work Remote: ${formValues.remoteWork}
+        Programming Skillset: ${formValues.skillSet}
+        Years of Experience: ${formValues.yearsOfExperience}
+        Applicant Age: ${formValues.profileAge}
+        `);
+};
+
 // -----
 // -----
 // -----
