@@ -90,6 +90,10 @@ Agregr sus canciones favoritas a esta playlist en spotify!
   - [Attribute Binding v-bind directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/4-attribute-binding.vue)
   - [Conditional Rendering v-if v-else-if v-else directives and v-show directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/5-ConditionalRendering.vue)
   - [Iterating Through Elements - v-for directive](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/6-IteratingElements.vue)
+  - [Methods](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/7-Methods.vue)
+  - [Computed Properties](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/8-ComputedProperties.vue)
+  - [Two Way Data Binding - Handling Forms and User Inputs](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/9-TwoWayData.vue)
+  - [Watchers](https://github.com/dzc1/ironhack-nov07/blob/main/section-04-vue/my-first-vue-project/src/components/vueBasics/10-Watchers.vue)
   <!-- - []() -->
 
 ## Links de Ayuda
