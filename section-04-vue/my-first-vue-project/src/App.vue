@@ -14,7 +14,7 @@ import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld alexis="Computed Class" />
+      <HelloWorld alexis="Forms 'Two Way Data' Class" />
     </div>
   </header>
   <main>
@@ -34,7 +34,7 @@ import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
     <!-- <hr />-->
     <ComputedProperties />
     <!-- <hr /> -->
-    <!-- <TwoWayDataBinding /> -->
+    <TwoWayDataBinding />
   </main>
 </template>
 

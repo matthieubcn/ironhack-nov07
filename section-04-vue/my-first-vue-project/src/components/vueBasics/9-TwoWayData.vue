@@ -9,10 +9,155 @@
       </p>
     </div>
     <!-- WITHOUT v-model -->
+    <!-- <label for="message">Message:</label>
+    <input
+      id="message"
+      :value="message"
+      @input="(event) => (message = event.target.value)"
+    />
+    <h1>Message is {{ message }}</h1> -->
 
     <!-- WITH v-model -->
+    <!-- <label for="message">Message:</label>
+    <input id="message" v-model="message" />
+    <textarea name="" id="" cols="30" rows="10" v-model="message"></textarea>
+    <h1>Message is {{ message }}</h1> -->
 
     <!-- Job Application Form -->
+    <div id="myForm">
+      <div id="form-v-model-visibilidad">
+        <pre>{{ JSON.stringify(formValues, null, 1) }}</pre>
+      </div>
+      <form @submit.prevent="submitForm">
+        <div id="user-input-formName-data">
+          <label for="name">Enter Name</label>
+          <input
+            type="text"
+            autocomplete="off"
+            id="name"
+            v-model="formValues.formName"
+          />
+        </div>
+        <div id="user-input-profileSUmmary-data">
+          <label for="profile">Enter your profile Summary:</label>
+          <textarea
+            name="profile"
+            id="profile"
+            cols="30"
+            rows="10"
+            v-model.trim.lazy="formValues.profileSummary"
+          ></textarea>
+        </div>
+        <div id="user-input-country-data">
+          <label for="country">Country</label>
+          <select name="country" id="country" v-model="formValues.country">
+            <option>Select a country of origin:</option>
+            <option value="brazil">Brazil</option>
+            <option value="argentina">Argentina</option>
+            <option value="ecuador">Ecuador</option>
+            <option value="chile">Chile</option>
+          </select>
+        </div>
+        <div id="user-input-jobLocation-data">
+          <label for="jobLocation">
+            Are you willing to move to any of these European countries?
+          </label>
+          <select
+            name="jobLocation"
+            id="jobLocation"
+            multiple
+            v-model="formValues.jobLocation"
+          >
+            <option>Select a countries</option>
+            <option value="spain">Spain</option>
+            <option value="portugal">Portugal</option>
+            <option value="germany">Germany</option>
+            <option value="austria">Austria</option>
+          </select>
+        </div>
+        <div id="user-input-skillSet-data">
+          <label>What are your programming skillz?</label>
+          <div class="multiple-checkboxes">
+            <input
+              type="checkbox"
+              id="vue"
+              value="vue"
+              v-model="formValues.skillSet"
+            />
+            <label for="vue">Vue</label>
+          </div>
+          <div class="multiple-checkboxes">
+            <input
+              type="checkbox"
+              id="html"
+              value="html"
+              v-model="formValues.skillSet"
+            />
+            <label for="html">HTML</label>
+          </div>
+          <div class="multiple-checkboxes">
+            <input
+              type="checkbox"
+              id="js"
+              value="js"
+              v-model="formValues.skillSet"
+            />
+            <label for="js">Javascript</label>
+          </div>
+        </div>
+        <div id="user-input-rearsOfExp-data">
+          <label>Years of experience</label>
+          <div class="multiple-checkboxes">
+            <input
+              type="radio"
+              id="0-3"
+              value="0-3"
+              v-model="formValues.yearsOfExperience"
+            />
+            <label for="0-3">0-3 Years</label>
+          </div>
+          <div class="multiple-checkboxes">
+            <input
+              type="radio"
+              id="3-8"
+              value="3-8"
+              v-model="formValues.yearsOfExperience"
+            />
+            <label for="3-8">3-8 Years</label>
+          </div>
+          <div class="multiple-checkboxes">
+            <input
+              type="radio"
+              id="8-godStatus"
+              value="8-godStatus"
+              v-model="formValues.yearsOfExperience"
+            />
+            <label for="8-godStatus"
+              >8 - Steve Wozniak Status of Experience</label
+            >
+          </div>
+        </div>
+        <div id="user-input-remoteWork-data">
+          <div class="multiple-checkboxes">
+            <input
+              type="checkbox"
+              id="remoteWork"
+              v-model="formValues.remoteWork"
+            />
+            <label for="remoteWork">Are you open to work fully remote?</label>
+          </div>
+        </div>
+        <div id="user-input-profileAge-data">
+          <label for="profileAge">How old are you?</label>
+          <input
+            type="number"
+            id="profileAge"
+            v-model.number="formValues.profileAge"
+          />
+        </div>
+        <input type="submit" value="Submit Form" />
+      </form>
+    </div>
   </div>
 </template>
 
@@ -40,7 +185,7 @@ function submitForm() {
 
 <style scoped>
 pre {
-  font-size: 32px;
+  font-size: 24px;
 }
 div {
   display: flex;
@@ -54,5 +199,9 @@ div {
 
 .form-class-container {
   min-width: 75%;
+}
+
+label {
+  font-size: 1rem;
 }
 </style>
