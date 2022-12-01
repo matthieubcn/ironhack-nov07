@@ -8,6 +8,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 // import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
 import Methods from "./components/vueBasics/7-Methods.vue";
 import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
+import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
 </script>
 
 <template>
@@ -30,8 +31,10 @@ import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue"
     <IteratingElements /> -->
     <!-- <hr />
     <Methods /> -->
-    <hr />
+    <!-- <hr />-->
     <ComputedProperties />
+    <!-- <hr /> -->
+    <!-- <TwoWayDataBinding /> -->
   </main>
 </template>
 
