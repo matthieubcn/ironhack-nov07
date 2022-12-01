@@ -158,6 +158,8 @@
         <input type="submit" value="Submit Form" />
       </form>
     </div>
+
+    <div id="class-excercise"></div>
   </div>
 </template>
 
@@ -178,9 +180,20 @@ const formValues = reactive({
   profileAge: null,
 });
 
-function submitForm() {
-  console.log("Form Values", formValues);
-}
+// -----
+// -----
+// -----
+// -----
+// -----
+// -----
+// CLASS EXCERCISE
+// Montamos un formulario para ir al primavera sound. Vamos a incluirle un input type text para vuestro nombre y un input type email para el email. Vamos incorporar un select que nos permita escoger entre cinco artistas para ver en el festival. Después hacemos inputs separados que reciban propiedades booleanicas y que respondan a estas preguntas:
+// Consumes alcohol o drogas? (si/no)
+// Vas a venir vestid@ de negro? (si/no)
+// Tienes más de 21 años? (si/no)
+// Vienes con un grupo de más de 2 personas? (si/no)
+// Por ultimo hacemos input textarea para sugerencias de mejora del festival.
+// Cuando se envíe el formulario imprimiremos la info que se ha mandado con una alerta en el browser.
 </script>
 
 <style scoped>
