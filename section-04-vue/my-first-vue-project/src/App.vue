@@ -6,12 +6,14 @@ import HelloWorld from "./components/HelloWorld.vue";
 // import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
 // import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
 // import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
+import Methods from "./components/vueBasics/7-Methods.vue";
+import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld alexis="Wu Tang Clan" />
+      <HelloWorld alexis="Computed Class" />
     </div>
   </header>
   <main>
@@ -26,6 +28,10 @@ import HelloWorld from "./components/HelloWorld.vue";
     <ConditionalRendering /> -->
     <!-- <hr />
     <IteratingElements /> -->
+    <!-- <hr />
+    <Methods /> -->
+    <hr />
+    <ComputedProperties />
   </main>
 </template>
 
