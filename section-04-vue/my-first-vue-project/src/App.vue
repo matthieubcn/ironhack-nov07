@@ -10,33 +10,25 @@ import HelloWorld from "./components/HelloWorld.vue";
 // import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
 // import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
 import Watchers from "./components/vueBasics/10-Watchers.vue";
+import Events from "./components/vueBasics/11-Events.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Forms Excercise" />
+      <HelloWorld msg="Watch Class Excercise" />
     </div>
   </header>
   <main>
     <!-- <MyFirstComponent /> -->
-    <!-- <hr /> -->
     <!-- <TextDirective /> -->
-    <!-- <hr /> -->
     <!-- <HtmlDirective /> -->
-    <!-- <hr />
-    <AttributeBinding /> -->
-    <!-- <hr />
-    <ConditionalRendering /> -->
-    <!-- <hr />
-    <IteratingElements /> -->
-    <!-- <hr />
-    <Methods /> -->
-    <!-- <hr />-->
+    <!-- <AttributeBinding /> -->
+    <!-- <ConditionalRendering /> -->
+    <!-- <IteratingElements /> -->
+    <!-- <Methods /> -->
     <!-- <ComputedProperties /> -->
-    <!-- <hr /> -->
-    <!-- <TwoWayDataBinding />
-    <hr /> -->
+    <!-- <TwoWayDataBinding /> -->
     <Watchers />
   </main>
 </template>

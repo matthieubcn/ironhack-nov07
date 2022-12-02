@@ -116,21 +116,17 @@ const movieList = reactive([
   "Ray",
 ]);
 
+// Dado que estamos mutando un array, necesitamos añadir una funcionalidad extra a la función watcher, que es la deep:true
 const addMoviePush = () => {
   movieList.push("Saving Private Ryan");
 };
-const addMovieConcat = () => {
-  movieList.value.concat([
-    "Pulp Fiction",
-    "Interstellar",
-    "Wonder",
-    "Jaws",
-    "Ray",
-    "Titanic",
-    "Life",
-    "A Scanner Darkly",
-  ]);
-};
+
+// concat devuelve una nueva matriz, por lo que podemos utilizar este enfoque para crear una nueva en lugar de mutarlas, eliminar el deep:true en la función watcher para probarlo.
+// const addMovieConcat = () => {
+//   let newMovie = "Titanic";
+//   movieList.concat(newMovie);
+//   console.log(movieList);
+// };
 
 watch(
   movieList,
@@ -139,6 +135,7 @@ watch(
   },
   // IMPORTANTISMO
   // CUANDO TRABAJAMOS CON WATCHERS ESPECIFICAMENTE TRABAJANDO WATCHERS Y APUNTANDO A DATSO NO PRIMITIVOS COMO OBJETOS Y ARRATS, NECESITAMOS EXPANDIR UN POCO EL METODO WATCH!!! CON UN OBJETO QUE SE LLAMA "{DEEP: TRUE}", SI NO EL WATCHER NO PODRA TRABAJAR CON DATOS NOPRIMITIVOS, SIEMPRE DEPENDEMOS DE ESTE OBJETO PARA PODER MUTAR O MANIPULAR ESTOS TIPOS DE DATOS!
+  // QUITAR PARA PROBAR CON EL METODO CONCAT
   { deep: true }
 );
 
@@ -223,7 +220,7 @@ watch(answer, (newVal, oldVal) => {
     <!-- Mutar el Array con la info nueva - PUSH -->
     <button @click="addMoviePush()">Add Movie - PUSH</button>
     <!-- Creamos Nuevos Array - CONCAT -->
-    <button @click="addMovieConcat()">Add Movie - CONCAT</button>
+    <!-- <button @click="addMovieConcat()">Add Movie - CONCAT</button> -->
     <p v-for="(movie, index) in movieList" :key="index">{{ movie }}</p>
   </div>
   <div id="ejemplo-4">
