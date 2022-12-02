@@ -1,0 +1,17 @@
+[
+  {
+    "response": "yes",
+    "image": "https://media.giphy.com/media/hXDrTueJWAscK3xWQ2/giphy.gif",
+    "userResponse": "Yay te gusta la pizza!"
+  },
+  {
+    "response": "no",
+    "image": "https://media.giphy.com/media/98C4E2HeR4NBm/giphy.gif",
+    "userResponse": "Que raro eres!"
+  },
+  {
+    "response": "",
+    "image": "https://media.giphy.com/media/3o7527pa7qs9kCG78A/giphy.gif",
+    "userResponse": "dame una respuesta correcta! wtf!"
+  }
+]
