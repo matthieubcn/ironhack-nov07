@@ -41,8 +41,13 @@
 
   <!-- CUSTOM EVENTS -->
   <!-- Aunque es muy útil tener eventos nativos de Vue.js incorporados para hacer frente a los sucesos del día a día, a menudo se da el caso de que tenemos que hacer frente a cosas personalizadas que suceden fuera del ámbito de estos. Cuando esto sucede, podemos utilizar los custom events (eventos personalizados) como una forma de que nuestros componentes se comuniquen entre sí. Los eventos personalizados permiten que un componente hijo envíe un evento a un componente padre y que éste actúe sobre el evento. -->
-  <CustomEventsEmits @sayHi="alertHi" />
-  <CustomEventsEmits @sayHi="alertBye" />
+  <h3>Custom Events</h3>
+  <CustomEventsEmits
+    @sayHi="alertHi"
+    @greet="alertGreet"
+    @diego="alertBye"
+    @alertEmit="alertEmitChild"
+  />
 </template>
 
 <script setup>
@@ -62,7 +67,7 @@ const holaClase = (stringQueLePasaremosDentro) => {
   alert(stringQueLePasaremosDentro);
 };
 
-// Usando modificadores EJEMPLO
+// Usando modificadores EJEMPLO 001
 const handleSubmit = (e) => {
   //e.preventDefault();
   console.log("El form se envio!!!!");
@@ -72,13 +77,24 @@ const handleSubmit = (e) => {
 const alertHi = () => {
   alert("Hello!!");
 };
-
+// Funcion que usamos con nuestro primer emit sayHi del child component 11.5EventsChild.vue :)
 const alertBye = () => {
   alert("Good Bye!!");
 };
 
+// Funcion que usamos con nuestro primer emit greet del child component 11.5EventsChild.vue :)
+const alertGreet = (name) => {
+  alert(`Hi ${name}!`);
+};
+
 /// EJERCICIO 001 - CUSTOM EVENT
 // Ej. 1: Crean una carpeta dentro del components folder y creamos un componente ParentComponent.vue y otro componente ChildComponent.vue. El template de ChildComponent debe ser un botón con el texto 'Emit'. En el template de ParentComponent poned lo que queráis (un h1 p.ej.). Después debéis llamar al ChildComponent. EN EL SCRIPT DE PARENT creamos una función que tire una alerta de 'Emit realizado con éxito! :)'. Ahora lo que tenemos que hacer es que cuando le demos al botón de ChildComponent se llame la función de ParentComponent.
+const alertEmitChild = () => {
+  alert("Emit Realiado con Exito - WU TANG!");
+};
+
+/// EJERCICIO 002 - CUSTOM EVENT
+// // Ej. 2: Creamos tres componentes: General.vue, Input.vue y Submit.vue. General debe enseñar en un <h1> una variable reactiva con vuestro nombre. Input debe contener un input type text y Submit.vue debe ser un botón. En el script de General vamos a crear la función changeName(), la cual va a aceptar un argumento y cambiará el valor de la variable reactiva por el de dicho argumento. Después tendréis que crear la lógica correspondiente para que al darle al botón de Submit podamos coger el valor inputado en Input y cambiar el <h1> de General por dicho valor.
 </script>
 
 <style>
