@@ -179,6 +179,14 @@ watch(answer, (newVal, oldVal) => {
 // 2- De la respuesta en función a un JSON que debes crear
 // 3- El JSON será un archivo local que conteste "Yey, te gusta la pizza" si dices que sí, "Que raro eres" si dices que no y "contéstame bien" si contestas cualquier otra cosa.
 // 4- Junto a la contestación, debe aparecer una imagen divertida
+
+//EJEMPLO DEL JSON
+// [
+//   {
+//     "answer": "no",
+//     "image": "https://t3.ftcdn.net/jpg/03/36/81/88/360_F_336818845_1tvrNYhwr19LfGiC4BDAeCJzm0mVHH48.jpg"
+// }
+// ]
 </script>
 
 <template>
