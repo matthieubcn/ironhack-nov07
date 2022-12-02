@@ -9,14 +9,14 @@ import HelloWorld from "./components/HelloWorld.vue";
 // import Methods from "./components/vueBasics/7-Methods.vue";
 // import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
 // import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
-import Watchers from "./components/vueBasics/10-Watchers.vue";
+//import Watchers from "./components/vueBasics/10-Watchers.vue";
 import Events from "./components/vueBasics/11-Events.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Watch Class Excercise" />
+      <HelloWorld msg="Events & Custom Events" />
     </div>
   </header>
   <main>
@@ -29,7 +29,8 @@ import Events from "./components/vueBasics/11-Events.vue";
     <!-- <Methods /> -->
     <!-- <ComputedProperties /> -->
     <!-- <TwoWayDataBinding /> -->
-    <Watchers />
+    <!-- <Watchers /> -->
+    <Events />
   </main>
 </template>
 
