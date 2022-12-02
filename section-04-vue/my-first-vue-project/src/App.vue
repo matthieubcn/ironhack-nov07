@@ -9,12 +9,13 @@ import HelloWorld from "./components/HelloWorld.vue";
 import Methods from "./components/vueBasics/7-Methods.vue";
 import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
 import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
+import Watchers from "./components/vueBasics/10-Watchers.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld alexis="Forms 'Two Way Data' Class" />
+      <HelloWorld msg="Forms Excercise" />
     </div>
   </header>
   <main>
@@ -34,7 +35,9 @@ import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
     <!-- <hr />-->
     <!-- <ComputedProperties /> -->
     <!-- <hr /> -->
-    <TwoWayDataBinding />
+    <!-- <TwoWayDataBinding />
+    <hr /> -->
+    <Watchers />
   </main>
 </template>
 

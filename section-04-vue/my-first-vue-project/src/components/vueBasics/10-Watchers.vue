@@ -65,75 +65,6 @@ watch(
 // ----
 // ----
 // ----
-
-// EJEMPLOS
-//EXAMPLE 1 - Name Change
-let name = ref("Jarko");
-
-function changeName() {
-  name.value = "Aleix";
-}
-
-watch(name, (newValue, oldValue) => {
-  console.log(`New Value is ${newValue} - the old value was ${oldValue}`);
-});
-
-//EXAMPLE 2 - Volume tracker
-let volume = ref(0);
-
-//Watch Function to monitor volume change and display alert msg is user goes over 8decibels...
-
-// V1
-watch(volume, (newValue, oldValue) => {
-  if (newValue > oldValue && newValue === 8) {
-    alert(
-      "Yo yo yo my individual, you better check your ears cause you'll be deaf in a few years!"
-    );
-  }
-});
-
-// V2 - Jumps alert once we go back down, not the best useCase for our users....
-watch(volume, (newValue, oldValue) => {
-  if (newValue === 8) {
-    alert(
-      "Yo yo yo my individual, you better check your ears cause you'll be deaf in a few years!"
-    );
-  }
-});
-
-//EXAMPLE 3 - Mutating Arrays
-const movieList = ref(["Batman", "Spiderman"]);
-
-function addMovie() {
-  movieList.value.push("Saving Private Ryan");
-}
-
-// Why Deep true ?
-//Using Watchers with Objects and Arrays, if you dont specify deep: true there is no way of accesing the objects or arrays elements
-watch(
-  movieList,
-  (newValue, oldValue) => {
-    console.log(`Updated List ${newValue}`);
-  }
-  //   { deep: true }
-);
-
-// EXAMPLE 4 - ASKING A QUESTION
-const question = ref("");
-const answer = ref("Questions usually contain a question mark. ;-)");
-
-// watch works directly on a ref
-watch(question, async (newQuestion, oldQuestion) => {
-  if (newQuestion.indexOf("?") > -1) {
-    answer.value = "Thinking...";
-    try {
-      const res = await fetch("https://yesno.wtf/api");
-      answer.value = (await res.json()).answer;
-    } catch (error) {
-      answer.value = "Error! Could not reach the API. " + error;
-    }
-  }
-});
 </script>
 
 <template>
@@ -142,51 +73,6 @@ watch(question, async (newQuestion, oldQuestion) => {
     <p>{{ x + y }}</p>
     <input v-model="x" />
     <input v-model="y" />
-  </div>
-  <div id="example-1">
-    <h3>Example 1</h3>
-    <p>My Name is what? My name is who? my name is {{ name }}</p>
-    <button @click="changeName()">Change My Name</button>
-  </div>
-
-  <div id="ejemplo-2">
-    <h3>Example 2</h3>
-    <h3>Volume Tracker (0-20)</h3>
-    <p>
-      The current volume is <strong>{{ volume }}</strong>
-    </p>
-    <div>
-      <button @click="volume -= 1">Decrease</button>
-      <button @click="volume += 1">Increase</button>
-    </div>
-  </div>
-
-  <div id="ejemplo-3">
-    <h3>Example 3</h3>
-
-    <!-- Mutating Arrays -->
-
-    <!-- Since we are mutating an array, we need to add extra functionality to the watcher function, which is the deep:true -->
-    <button @click="addMovie">Add Movie - push()</button>
-
-    <!-- concat returns new array thus we can use this approach to create a new one instead of mutating them, remove the deep:true on the watcher function to test this out!  -->
-    <button @click="movieList = movieList.concat(['Titanic'])">
-      Add Movies - concat()
-    </button>
-
-    <h3>Movie List</h3>
-    <p v-for="(movie, index) in movieList" :key="index">
-      {{ movie }}
-    </p>
-  </div>
-
-  <div id="ejempl-4">
-    <h1>Ejemplo 4</h1>
-    <p>
-      Ask a yes/no question:
-      <input v-model="question" />
-    </p>
-    <p>{{ answer }}</p>
   </div>
 </template>
 
