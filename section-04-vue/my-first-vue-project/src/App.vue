@@ -11,12 +11,13 @@ import HelloWorld from "./components/HelloWorld.vue";
 // import TwoWayDataBinding from "./components/vueBasics/9-TwoWayData.vue";
 //import Watchers from "./components/vueBasics/10-Watchers.vue";
 import Events from "./components/vueBasics/11-Events.vue";
+import Hooks from "./components/vueBasics/12-Hooks.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Events & Custom Events" />
+      <HelloWorld msg="Hooks" />
     </div>
   </header>
   <main>
@@ -30,7 +31,8 @@ import Events from "./components/vueBasics/11-Events.vue";
     <!-- <ComputedProperties /> -->
     <!-- <TwoWayDataBinding /> -->
     <!-- <Watchers /> -->
-    <Events />
+    <!-- <Events /> -->
+    <Hooks />
   </main>
 </template>
 
