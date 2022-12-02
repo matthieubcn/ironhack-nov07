@@ -208,6 +208,49 @@ watch(answer2, async (newAnswer) => {
 </script>
 
 <template>
+  <div id="breakdown">
+    <h1>WATCHERS</h1>
+    <img
+      src="https://www.noticiastrabajo.es/uploads/images/2022/11/vigilantes-securitas-ofertas.jpg"
+      alt="Los Watchers"
+    />
+  </div>
+  <div id="breakdown">
+    <h3>Breakdown</h3>
+    <!-- <p>{{ x + y }}</p> -->
+    <input v-model="x" />
+    <input v-model="y" />
+    <input type="number" v-model="obj.count" />
+  </div>
+  <div id="ejemplo-1">
+    <h3>Ejemplo 001</h3>
+    <p>My name is what? my name is who? my name is what? {{ name }}</p>
+    <button @click="changeName()">click me to see slim shady</button>
+  </div>
+  <div id="ejemplo-2">
+    <h3>Ejemplo 002</h3>
+    <h5>Volume Tracker (0-20)</h5>
+    <p>El voumen actual es: {{ volume }}</p>
+    <div>
+      <button @click="volume -= 1">Reducir</button>
+      <button @click="volume += 1">Incrementar</button>
+    </div>
+  </div>
+  <div id="ejemplo-3">
+    <h3>Ejemplo 003</h3>
+    <!-- Mutar el Array con la info nueva - PUSH -->
+    <button @click="addMoviePush()">Add Movie - PUSH</button>
+    <!-- Creamos Nuevos Array - CONCAT -->
+    <!-- <button @click="addMovieConcat()">Add Movie - CONCAT</button> -->
+    <p v-for="(movie, index) in movieList" :key="index">{{ movie }}</p>
+  </div>
+  <div id="ejemplo-4">
+    <h3>Ejemplo 004</h3>
+    <p>Preguntame una pregunta closeEnded Question!</p>
+    <input type="text" v-model="question" />
+    <h5>{{ answer }}</h5>
+  </div>
+
   <div id="class-ejercicio">
     <h1>{{ question2 }}</h1>
     <input type="text" v-model="answer2" maxlength="3" />
